@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class Words extends Component {
+export class Word extends Component {
     render() {
         return (
             <div>
-                {this.props.word}
+                {this.props.theText}
             </div>
         )
     }
 }
 
-export default Words
+export default Word

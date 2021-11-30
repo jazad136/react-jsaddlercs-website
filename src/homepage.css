@@ -1,0 +1,88 @@
+/* CSS Document */
+body { 
+    font-family: "Verdana", "Georgia", "Arial", "Helvetica", sans-serif;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.focus-content {
+    width: 80%;
+    margin-left: 6%;
+    margin-right: 6%;
+    text-align: center;    
+    
+}
+
+.nav-container { 
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: thin solid #eeeeee
+}
+.a-container {
+    width: 60%;
+    display: block;
+    float: left; 
+    clear: both;
+}
+
+.a, .a2 {
+    display: block;
+    float: left;
+    width: 20%;
+}
+.aa-container { 
+    display: block;
+    width: 35%;
+    float: left;
+}
+.aa, .aa2  {
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: right;
+}
+.a-space { 
+    clear: both;
+    padding: 30px 0 30px 0;
+    border: thin solid #eeeeee;
+    color: #eeeeee;   
+}
+.b-container { 
+    clear: both;
+}
+.b, .b2, .b3 { 
+    width: 33%;
+    display: block;
+    float: left;
+    min-height: 100px;
+}
+.b2-1 { 
+    min-height: 100px;
+    vertical-align: center;
+    text-align: center;
+    border: thin solid black;
+}   
+.b-space { 
+    clear: both;
+    padding: 30px 0 30px 0;
+    border: thin solid #eeeeee;
+    color: #eeeeee;   
+}
+.c-container {
+    clear: both;
+    padding-left: 20%;
+} 
+.c, .c2, .c3 {
+    border: thin solid gray;
+    width: 25%;
+    margin: 0 2.5% 0 0; /* t r b l */
+    padding: 25px 0 0 0; /* t r b l */
+    float: left;
+    min-height: 100px;
+    text-align: center;   
+}
+.d-container { 
+    clear: both;
+
+}

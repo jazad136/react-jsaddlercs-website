@@ -1,22 +1,17 @@
 import React, {Component} from 'react';
 import './App.css';
+import Word from './view/Word';
+import TextFieldUpdate from './view/TextFieldUpdate';
 class App extends Component { 
   render() { 
     return (
       <div>
-      <div className="nav-container">
-          <div className="a-container">
-              <div className="a">Home</div>
-              <div className="a2">Projects</div>
-              <div className="a3">Teaching</div>
-          </div>
-      </div>
-      <div className="focus-content">
-        <div className="a-space">a-space</div>
-        <div className="b-container">
-          
-        </div>
-      </div>
+        <div>Jonathan App</div>
+        <div>Here are the Words</div>
+        <Word theText="Fearless"/>
+        <Word theText="Thoughtful"/>
+        <TextFieldUpdate/>
+        
       </div>
     );
   }

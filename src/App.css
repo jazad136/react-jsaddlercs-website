@@ -1,6 +1,56 @@
-.App {
-  text-align: center;
+body { 
+  font-family: "Verdana", "Georgia", "Arial", "Helvetica", sans-serif;
+  padding-left: 2%;
+  padding-right: 2%;
 }
+
+.focus-content {
+  width: 80%;
+  margin-left: 6%;
+  margin-right: 6%;
+  text-align: center;    
+  
+}
+
+.nav-container { 
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: thin solid #eeeeee
+}
+.a-container {
+  width: 60%;
+  display: block;
+  float: left; 
+  clear: both;
+  font-size: 1.1em;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.nav-bar { 
+  color: white;
+  background-color: #666;
+}
+.a, .a2 {
+  display: block;
+  float: left;
+  width: 20%;
+}
+
+.a-space { 
+  clear: both;
+  padding: 30px 0 30px 0;
+  border: thin solid #eeeeee;
+  color: #eeeeee;   
+}
+.b-container { 
+  clear: both;
+}
+
+/* *********** */
+/* From Grider */
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
