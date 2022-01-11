@@ -17,37 +17,34 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   border: thin solid #eeeeee;
-  
+  background-color: black;
 }
-.a-container {
-  width: 60%;
-  display: block;
-  float: left; 
-  clear: both;
-  font-size: 1.1em;
-  font-style: italic;
-  padding-bottom: 10px;
-}
-
-.nav-bar { 
+.navBar h1 { 
+  float: left;
+} 
+/* .nav-bar { 
   color: white;
   background-color: #666;
+} */
+
+.bc-container {
+  width:70%; 
+  float: left;
 }
-.a, .a2 {
+.a {
+  width: 28%;
   display: block;
   float: left;
-  width: 20%;
 }
+.a h2 { font-size: 1.1em;}
 
-.a-space { 
+.nav-space { 
   clear: both;
   padding: 30px 0 30px 0;
   border: thin solid #eeeeee;
   color: #eeeeee;   
 }
-.b-container { 
-  clear: both;
-}
+
 
 /* Second Import */
 .homepage-img { 
@@ -55,34 +52,46 @@ body {
   border: thin solid gray;
   border-radius: 50px / 75px;
 }
-.b, .b2,.b3 {
-  display: block;
-  float: left;
-  min-height: 100px;
-}
 
 .b { 
-  /* width: 25%;  */
-  width: 35%;
+  display: block;
+  width: 15%; 
+  border: thin solid gray;
+  min-height: 3ex;
+  margin: 0 2.5% 0 0; /* t r b l */
+  padding: 1ex 0 1ex 0; /* t r b l */
+  text-align: left;
+  float: left;
 }
-.b2 { 
-  width: 55%; 
+.c1, .c2, .c3, .c4 { 
+  display: block;
+  width: 15%;
+  border: thin solid gray;
+  min-height: 3ex;
+  margin: 0 2.5% 0 0; /* t r b l */
+  padding: 1ex 0 1ex 0; /* t r b l */
+  float: left;
+  text-align: left;   
 }
 
-/* .b3 { 
-  width: 25%; 
-} */
+.b a, .c1 a, .c2 a, .c3 a, .c4 a { 
+  text-decoration: none;
+  color: black;
+}
+.b  a:visited, 
+.c1 a:visited, 
+.c2 a:visited, 
+.c3 a:visited,
+.c4 a:visited { 
+  color: black;
+}
+
+
 
 .nameplate h2 { 
   font-weight: normal;
   font-size: 1.3em;
 }
-.b2-1 { 
-  min-height: 100px;
-  vertical-align: center;
-  text-align: center;
-  border-radius: 25px;
-} 
 .b-space { 
   clear: both;
   padding: 30px 0 30px 0;
@@ -90,19 +99,7 @@ body {
   color: #eeeeee;   
 }
 
-.c-container {
-  clear: both;
-  padding-left: 20%;
-} 
-.c, .c2, .c3 {
-  border: thin solid gray;
-  width: 25%;
-  margin: 0 2.5% 0 0; /* t r b l */
-  padding: 25px 0 0 0; /* t r b l */
-  float: left;
-  min-height: 100px;
-  text-align: center;   
-}
+
 .d-container { 
   clear: both;
 
