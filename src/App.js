@@ -4,19 +4,18 @@ import SelfPic from './images/homepage-img/SelfPicHome_Reduced.jpg';
 import {BrowserRouter as Router} from 'react-router-dom';
 // import {BrowserRouter as Switch, Route} from 'react-router-dom';
 import Navbar from './Navbar'
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import {library} from '@fortawesome/fontawesome-svg-core';
 class App extends Component { 
-  constructor() {
-    super()
-    library.add(fab)
-  }
+  
   render() { 
     return (
       <Router>
         <Navbar />
         <div className="focus-content">
           <div className="nav-space">nav-space</div>
+          <div className="ef-container">
+            <div className="e">e</div>
+            <div className="f">f</div>
+          </div>
           <div className="b-container">
           <div class="b">
               <div className="homepage-img-box">
