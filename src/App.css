@@ -5,23 +5,32 @@ body {
 }
 
 .focus-content {
-  width: 80%;
+  width: 100%;
   margin-left: 6%;
   margin-right: 6%;
   text-align: center;    
   
 }
 
-.navBar { 
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+nav.navBar { 
+  display: block;
+  width: 95%;
   border: thin solid #eeeeee;
   background-color: black;
 }
-.navBar h1 { 
+.a {
+  margin: 0 0 0 0; /* t r b l */
+  padding: 0 0 0 2em;
+  display: block;
+  width: 20%;
   float: left;
+  /* background-color: black;
+  color: white; */
+}
+.a h1 { 
+  font-size: .9em;
 } 
+
 /* .nav-bar { 
   color: white;
   background-color: #666;
@@ -30,27 +39,8 @@ body {
 .bc-container {
   width:70%; 
   float: left;
-}
-.a {
-  width: 28%;
-  display: block;
-  float: left;
-}
-.a h2 { font-size: 1.1em;}
-
-.nav-space { 
-  clear: both;
-  padding: 30px 0 30px 0;
-  border: thin solid #eeeeee;
-  color: #eeeeee;   
-}
-
-
-/* Second Import */
-.homepage-img { 
-  width: 100%;
-  border: thin solid gray;
-  border-radius: 50px / 75px;
+  
+  margin: 20px 2.5% 0 0; /* t r b l */
 }
 
 .b { 
@@ -58,8 +48,7 @@ body {
   width: 15%; 
   border: thin solid gray;
   min-height: 3ex;
-  margin: 0 2.5% 0 0; /* t r b l */
-  padding: 1ex 0 1ex 0; /* t r b l */
+  padding: 1ex 3% 1ex 3%; /* t r b l */
   text-align: left;
   float: left;
 }
@@ -68,8 +57,9 @@ body {
   width: 15%;
   border: thin solid gray;
   min-height: 3ex;
-  margin: 0 2.5% 0 0; /* t r b l */
-  padding: 1ex 0 1ex 0; /* t r b l */
+  /* t r b l */
+  /* padding: 1ex 0 1ex 0;  */
+  padding: 1ex 3% 1ex 3%; /* t r b l */
   float: left;
   text-align: left;   
 }
@@ -86,24 +76,41 @@ body {
   color: black;
 }
 
-
-
 .nameplate h2 { 
   font-weight: normal;
   font-size: 1.3em;
 }
-.b-space { 
+.nav-space { 
   clear: both;
   padding: 30px 0 30px 0;
   border: thin solid #eeeeee;
   color: #eeeeee;   
 }
 
-
-.d-container { 
-  clear: both;
-
+.ef-container { 
+  width: 100%;
+  clear: right;
 }
+.e { 
+  width: 30%;
+  float: left;
+  min-height: 200px;
+  border: thin solid gray;
+}
+.f { 
+  width: 70%;
+  clear: right;
+  min-height: 200px;
+  border: thin solid gray;
+}
+/* Second Import */
+.homepage-img { 
+  width: 100%;
+  border: thin solid gray;
+  border-radius: 50px / 75px;
+}
+
+
 /* *********** */
 /* From Grider */
 
