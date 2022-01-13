@@ -1,136 +1,18 @@
 body { 
   font-family: "Verdana", "Georgia", "Arial", "Helvetica", sans-serif;
-  padding-left: 2%;
-  padding-right: 2%;
+  font-size: 12px;
 }
 
 .focus-content {
   width: 100%;
-  margin-left: 6%;
-  margin-right: 6%;
-  text-align: center;    
-  
 }
 
 nav.navBar { 
-  display: block;
-  width: 95%;
-  border: thin solid #eeeeee;
-  background-color: black;
-}
-.a {
-  margin: 0 0 0 0; /* t r b l */
-  padding: 0 0 0 2em;
-  display: block;
-  width: 20%;
-  float: left;
-  /* background-color: black;
-  color: white; */
-}
-.a h1 { 
-  font-size: .9em;
-} 
-
-/* .nav-bar { 
   color: white;
   background-color: #666;
-} */
+  margin: 20px 2.5% 0 0;
+} 
 
-.bc-container {
-  width:70%; 
-  float: left;
-  
-  margin: 20px 2.5% 0 0; /* t r b l */
-}
-
-.b { 
-  display: block;
-  width: 15%; 
-  border: thin solid gray;
-  min-height: 3ex;
-  padding: 1ex 3% 1ex 3%; /* t r b l */
-  text-align: left;
-  float: left;
-}
-.c1, .c2, .c3, .c4 { 
-  display: block;
-  width: 15%;
-  border: thin solid gray;
-  min-height: 3ex;
-  /* t r b l */
-  /* padding: 1ex 0 1ex 0;  */
-  padding: 1ex 3% 1ex 3%; /* t r b l */
-  float: left;
-  text-align: left;   
-}
-
-.b a, .c1 a, .c2 a, .c3 a, .c4 a { 
-  text-decoration: none;
-  color: black;
-}
-.b  a:visited, 
-.c1 a:visited, 
-.c2 a:visited, 
-.c3 a:visited,
-.c4 a:visited { 
-  color: black;
-}
-
-.nameplate h2 { 
-  font-weight: normal;
-  font-size: 1.3em;
-}
-.nav-space { 
-  clear: both;
-  padding: 30px 0 30px 0;
-  border: thin solid #eeeeee;
-  color: #eeeeee;   
-}
-
-.ef-container { 
-  width: 100%;
-  clear: right;
-}
-.e { 
-  width: 30%;
-  float: left;
-  min-height: 200px;
-  border: thin solid gray;
-}
-.f { 
-  width: 70%;
-  clear: right;
-  min-height: 200px;
-  border: thin solid gray;
-}
-/* Second Import */
-.homepage-img { 
-  width: 100%;
-  border: thin solid gray;
-  border-radius: 50px / 75px;
-}
+/* padding: 1ex 3% 1ex 3%; t r b l */
 
 
-/* *********** */
-/* From Grider */
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
