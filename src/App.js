@@ -20,7 +20,7 @@ class App extends Component {
         <div className="container focus-content">
           This is where content goes.
           
-          <Grid columns="6">
+          {/* <Grid columns="6">
             <Grid.Row>
               <Grid.Column><div className="a">a</div></Grid.Column>
                   <Grid.Column><div className="b">b</div></Grid.Column>
@@ -30,6 +30,7 @@ class App extends Component {
                   <Grid.Column><div className="c4">c4</div></Grid.Column>
             </Grid.Row>
           </Grid>
+           */}
           <Grid columns={2}>
             <Grid.Row>
               <Grid.Column>
@@ -74,17 +75,62 @@ class App extends Component {
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
-            <Grid.Column>
-              <Segment className="k">
-                <div>k</div>
-                <Segment className="k1">k1</Segment>
-                <Segment className="k2">k2</Segment>
-                <Segment className="k3">k3</Segment>
-                <Segment className="k4">k4</Segment>
-              </Segment>
-            </Grid.Column>
+              <Grid.Column>
+                <Segment className="k">
+                  <div>k</div>
+                  <Segment className="k1">k1</Segment>
+                  <Segment className="k2">k2</Segment>
+                  <Segment className="k3">k3</Segment>
+                  <Segment className="k4">k4</Segment>
+                </Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Grid columns="2">
+                  <Grid.Column><Segment className="L1">L1</Segment></Grid.Column>
+                  <Grid.Column><Segment className="L2">L2</Segment></Grid.Column>
+                </Grid>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row columns={1}>
+              <Grid.Column>
+                <Segment className="m">m</Segment>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row columns={3}>
+              <Grid.Column>
+                <Segment className="n">n</Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment className="o">o</Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment className="p">p</Segment>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row columns={1}>
+              <Grid.Column>
+                <div className="q">q</div>
+                <Segment className="q1">q1</Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Grid columns={3}>
+                  <Grid.Column><Segment className="q2-1">q2-1</Segment></Grid.Column>
+                  <Grid.Column><Segment className="q2-2">q2-2</Segment></Grid.Column>
+                  <Grid.Column><Segment className="q2-3">q2-3</Segment></Grid.Column>
+                </Grid>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row columns={1}>
+              <Grid.Column><Segment className="r">r</Segment></Grid.Column>
+            </Grid.Row>
+            <Grid.Row columns={1}>
+              <Grid.Column><Segment className="s">s</Segment></Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+              <Grid.Column><Segment className="t">t</Segment></Grid.Column>
             </Grid.Row>
           </Grid>
+
           
         </div>
       </Router>
