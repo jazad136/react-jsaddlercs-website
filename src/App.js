@@ -31,12 +31,13 @@ class App extends Component {
             </Grid.Row>
           </Grid>
            */}
+
           <Grid columns={2}>
             <Grid.Row>
-              <Grid.Column>
+              <Grid.Column width={6}>
                 <Segment className="a">a</Segment>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column width={10}>
                 <Grid columns={5}>
                   <Grid.Column><Segment className="b">b</Segment></Grid.Column>
                   <Grid.Column><Segment className="c1">c1</Segment></Grid.Column>
@@ -47,17 +48,17 @@ class App extends Component {
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
-              <Grid.Column>
+              <Grid.Column width={6}>
                 <Segment className="e">e</Segment>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column width={10}>
                 <Grid.Column>
                   <Segment className="f">f</Segment>
                 </Grid.Column>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
-              <Grid.Column>
+              <Grid.Column width={6}>
                 <Segment className="g">
                   <div>g</div>
                   <Segment className="g1">g1</Segment>
@@ -66,7 +67,7 @@ class App extends Component {
                   <Segment className="g4">g4</Segment>
                 </Segment>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column width={10}>
                 <Grid columns={3}>
                   <Grid.Column><Segment className="h">h</Segment></Grid.Column>
                   <Grid.Column><Segment className="i">i</Segment></Grid.Column>
@@ -75,7 +76,7 @@ class App extends Component {
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
-              <Grid.Column>
+              <Grid.Column width={6}>
                 <Segment className="k">
                   <div>k</div>
                   <Segment className="k1">k1</Segment>
@@ -84,7 +85,7 @@ class App extends Component {
                   <Segment className="k4">k4</Segment>
                 </Segment>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column width={10}>
                 <Grid columns="2">
                   <Grid.Column><Segment className="L1">L1</Segment></Grid.Column>
                   <Grid.Column><Segment className="L2">L2</Segment></Grid.Column>
