@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import 'semantic-ui-css/semantic.min.css'
-import './App.css';
+import './css/App.css';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {Grid, Segment} from 'semantic-ui-react';
-
+import ImageNameplate from './components/ImageNameplate.js';
 // import {BrowserRouter as Switch, Route} from 'react-router-dom';
 // images and navbars - temporarily disabled. 
 // eslint-disable-next-line
@@ -47,16 +47,7 @@ class App extends Component {
                 </Grid>
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row>
-              <Grid.Column width={6}>
-                <Segment className="e">e</Segment>
-              </Grid.Column>
-              <Grid.Column width={10}>
-                <Grid.Column>
-                  <Segment className="f">f</Segment>
-                </Grid.Column>
-              </Grid.Column>
-            </Grid.Row>
+            <ImageNameplate/>
             <Grid.Row>
               <Grid.Column width={6}>
                 <Segment className="g">
