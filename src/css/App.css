@@ -3,10 +3,10 @@ body {
   font-size: 12px;
 }
 
-/* .focus-content { */
-  /* width: 80%;
-  margin-left: 10%; */
-/* } */
+.focus-content {
+  width: 80%;
+  margin-left: 10%;
+}
 
 nav.navBar { 
   color: white;
