@@ -46,7 +46,6 @@ class App extends Component {
               <Grid.Column width={6}>
 
                 <Segment className="g">
-                  <div>g</div>
                   {/* <Segment className="g1">g1</Segment>
                   <Segment className="g2">g2</Segment>
                   <Segment className="g3">g3</Segment>
@@ -54,7 +53,7 @@ class App extends Component {
                   <div className="g1"><a href={cv_pdf}>CV</a></div>
                   <div className="g2"><a href={resume_pdf}>Resume</a></div>
                   <div className="g3"><a href="https://www.linkedin.com/in/jonathan-a-saddler/">LinkedIn</a></div>
-                  <div className="g4"><a href="#">ResearchGate</a></div>
+                  <div className="g4"><a href="https://www.researchgate.net/profile/Jonathan-Saddler">ResearchGate</a></div>
                 </Segment>
               </Grid.Column>
               <Grid.Column width={10}>
