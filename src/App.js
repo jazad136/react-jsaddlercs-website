@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
 import 'semantic-ui-css/semantic.min.css'
-import './App.css';
+import './css/App.css';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {Grid, Segment} from 'semantic-ui-react';
-
+import { Container } from 'semantic-ui-react';
+import ImageNameplate from './components/ImageNameplate.js';
 // import {BrowserRouter as Switch, Route} from 'react-router-dom';
 // images and navbars - temporarily disabled. 
 // eslint-disable-next-line
 import SelfPic from './images/homepage-img/SelfPicHome_Reduced.jpg';
+import cv_pdf from './images/homepage-img/JSaddler_CV.pdf';
+import resume_pdf from './images/homepage-img/JSaddler_Resume.pdf';
 //import Navbar from './Navbar'
 
 class App extends Component { 
@@ -16,22 +19,13 @@ class App extends Component {
   render() { 
     return (
       <Router>
+
         Hi there.
-        <div className="container focus-content">
+        {/* <div className="container focus-content" style={{width: "80%",
+  marginLeft: "10%"}}> */}
+        <Container className="focus-content">
           This is where content goes.
           
-          {/* <Grid columns="6">
-            <Grid.Row>
-              <Grid.Column><div className="a">a</div></Grid.Column>
-                  <Grid.Column><div className="b">b</div></Grid.Column>
-                  <Grid.Column><div className="c1">c1</div></Grid.Column>
-                  <Grid.Column><div className="c2">c2</div></Grid.Column>
-                  <Grid.Column><div className="c3">c3</div></Grid.Column>
-                  <Grid.Column><div className="c4">c4</div></Grid.Column>
-            </Grid.Row>
-          </Grid>
-           */}
-
           <Grid columns={2}>
             <Grid.Row>
               <Grid.Column width={6}>
@@ -47,24 +41,19 @@ class App extends Component {
                 </Grid>
               </Grid.Column>
             </Grid.Row>
+            <ImageNameplate/>
             <Grid.Row>
               <Grid.Column width={6}>
-                <Segment className="e">e</Segment>
-              </Grid.Column>
-              <Grid.Column width={10}>
-                <Grid.Column>
-                  <Segment className="f">f</Segment>
-                </Grid.Column>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column width={6}>
+
                 <Segment className="g">
-                  <div>g</div>
-                  <Segment className="g1">g1</Segment>
+                  {/* <Segment className="g1">g1</Segment>
                   <Segment className="g2">g2</Segment>
                   <Segment className="g3">g3</Segment>
-                  <Segment className="g4">g4</Segment>
+                  <Segment className="g4">g4</Segment> */}
+                  <div className="g1"><a href={cv_pdf}>CV</a></div>
+                  <div className="g2"><a href={resume_pdf}>Resume</a></div>
+                  <div className="g3"><a href="https://www.linkedin.com/in/jonathan-a-saddler/">LinkedIn</a></div>
+                  <div className="g4"><a href="https://www.researchgate.net/profile/Jonathan-Saddler">ResearchGate</a></div>
                 </Segment>
               </Grid.Column>
               <Grid.Column width={10}>
@@ -133,7 +122,7 @@ class App extends Component {
           </Grid>
 
           
-        </div>
+        </Container>
       </Router>
     );
   }
