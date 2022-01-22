@@ -5,6 +5,8 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import {Grid, Segment} from 'semantic-ui-react';
 import { Container } from 'semantic-ui-react';
 import ImageNameplate from './components/ImageNameplate.js';
+import WebFont from 'webfontloader';
+
 // import {BrowserRouter as Switch, Route} from 'react-router-dom';
 // images and navbars - temporarily disabled. 
 // eslint-disable-next-line
@@ -12,8 +14,20 @@ import SelfPic from './images/homepage-img/SelfPicHome_Reduced.jpg';
 import cv_pdf from './images/homepage-img/JSaddler_CV.pdf';
 import resume_pdf from './images/homepage-img/JSaddler_Resume.pdf';
 //import Navbar from './Navbar'
+import Conferences from './components/Conferences'
+import Workshops from './components/Workshops';
 
 class App extends Component { 
+  constructor() {  
+    super()   
+    WebFont.load({
+        google: {
+            families: [
+              'Oswald: 400,700',
+              'Raleway: 400,700']
+        }
+    })
+  }
   // thanks goes out to https://www.section.io/engineering-education/transitioning-from-bootstrap-to-semantic-ui-react/
   // for a tutorial on transitioning from bootstrap to react
   render() { 
@@ -26,7 +40,7 @@ class App extends Component {
         <Container className="focus-content">
           This is where content goes.
           
-          <Grid columns={2}>
+          <Grid stackable columns={2}>
             <Grid.Row>
               <Grid.Column width={6}>
                 <Segment className="a">a</Segment>
@@ -111,10 +125,37 @@ class App extends Component {
               </Grid.Column>
             </Grid.Row>
             <Grid.Row columns={1}>
-              <Grid.Column><Segment className="r">r</Segment></Grid.Column>
+              <Grid.Column>
+                <Segment className="r">
+                  r
+                  <Conferences />
+                {/* <dl class="conference">
+                  <dt>Conference Proceedings</dt>
+                  <dd>
+                    <ol>
+                      <li><span class="me">Saddler, Jonathan A.</span>, Peterson, Cole S., Sama, Sanjana, 
+                      Nagaraj, Shruthi, Baysal, Olga, Guerrouj, Latifa, and Sharif, Bonita.
+                      &quot;Studying Developer Reading Behavior on Stack Overflow 
+                      during API Summarization Tasks.&quot;
+                      in <span class="paper">Proceedings 
+                      of the 27th International Conference on Software Analysis, 
+                      Evolution, and Reenginering (SANER 2020).</span>
+                      London, Ontario, Canada, February 2020.<br/>
+                      Available: https://doi.org/10.1109/SANER48275.2020.9054848<br/></li>
+                      
+                    </ol>
+                  </dd>
+                </dl> */}
+                </Segment>
+              </Grid.Column>
             </Grid.Row>
             <Grid.Row columns={1}>
-              <Grid.Column><Segment className="s">s</Segment></Grid.Column>
+              <Grid.Column>
+                <Segment className="s">
+                  s
+                  <Workshops />
+                </Segment>
+              </Grid.Column>
             </Grid.Row>
             <Grid.Row>
               <Grid.Column><Segment className="t">t</Segment></Grid.Column>
