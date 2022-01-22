@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import 'semantic-ui-css/semantic.min.css'
+import './css/App.css';
+import WebFont from 'webfontloader';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+WebFont.load({
+    google: {
+        families: ['Oswald: 400,700',
+                   'Raleway: 400,700']
+    }
+})
+// https://www.better.dev/how-to-add-fonts-to-a-react-project
+export class App extends Component {
+  render() {
+    return (
+        <div style={{fontFamily: "Oswald"}}>Hi there.</div>
+    );
+  }
 }
 
 export default App;
