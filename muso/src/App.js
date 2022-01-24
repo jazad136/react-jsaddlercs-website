@@ -16,12 +16,13 @@ export class App extends Component {
     return (
       <div className="focus-content">
         This is where content goes. 
-        <Grid columns={2}>
+        
+        <Grid columns={3}>
           <Grid.Column width={2}>
             <Segment className="a">a</Segment>
           </Grid.Column>
-          <Grid.Column>
-            <Grid columns={3}>
+          <Grid.Column width={6}>
+            <Grid columns={2}>
               <Grid.Column>
                 <Segment className="b">
                   b
@@ -39,11 +40,24 @@ export class App extends Component {
                 <Segment className="c">
                   c
                   <Grid columns={1}>
-                    
+                    <Grid.Column><Segment className="c1-1">c1-1</Segment></Grid.Column>
+                    <Grid.Column><Segment className="c1-2">c1-2</Segment></Grid.Column>
+                    <Grid.Column><Segment className="c2-1">c2-1</Segment></Grid.Column>
+                    <Grid.Column><Segment className="c2-2">c2-2</Segment></Grid.Column>
+                    <Grid.Column><Segment className="c3-1">c3-1</Segment></Grid.Column>
+                    <Grid.Column><Segment className="c3-2">c3-2</Segment></Grid.Column>
                   </Grid>
                 </Segment>
               </Grid.Column>
             </Grid>
+            <Grid.Column width={8}>
+                <div className="d">d</div>
+                <Grid columns="1">
+                  <Grid.Column>
+
+                  </Grid.Column>
+                </Grid>
+              </Grid.Column>
           </Grid.Column>
         </Grid>
       </div>
