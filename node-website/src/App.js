@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import 'semantic-ui-css/semantic.min.css'
 import './css/App.css';
 import {BrowserRouter as Router} from 'react-router-dom';
-import {Grid, Segment} from 'semantic-ui-react';
-import { Container } from 'semantic-ui-react';
+import {Grid, Segment, Button, Container, Card} from 'semantic-ui-react';
 import ImageNameplate from './components/ImageNameplate.js';
 import WebFont from 'webfontloader';
 
@@ -11,6 +10,7 @@ import WebFont from 'webfontloader';
 // images and navbars - temporarily disabled. 
 // eslint-disable-next-line
 import SelfPic from './images/homepage-img/SelfPicHome_Reduced.jpg';
+
 import cv_pdf from './images/homepage-img/JSaddler_CV.pdf';
 import resume_pdf from './images/homepage-img/JSaddler_Resume.pdf';
 //import Navbar from './Navbar'
@@ -46,11 +46,10 @@ class App extends Component {
                 <Segment className="a">a</Segment>
               </Grid.Column>
               <Grid.Column width={10}>
-                <Grid columns={5}>
-                  <Grid.Column><Segment className="b">b</Segment></Grid.Column>
-                  <Grid.Column><Segment className="c1">c1</Segment></Grid.Column>
-                  <Grid.Column><Segment className="c2">c2</Segment></Grid.Column>
-                  <Grid.Column><Segment className="c3">c3</Segment></Grid.Column>
+                <Grid columns={4}>
+                  <Grid.Column><Segment className="b">Home</Segment></Grid.Column>
+                  <Grid.Column></Grid.Column>
+                  <Grid.Column></Grid.Column>
                   <Grid.Column><Segment className="c4">c4</Segment></Grid.Column>
                 </Grid>
               </Grid.Column>
@@ -64,8 +63,19 @@ class App extends Component {
                   <Segment className="g2">g2</Segment>
                   <Segment className="g3">g3</Segment>
                   <Segment className="g4">g4</Segment> */}
-                  <div className="g1"><a href={cv_pdf}>CV</a></div>
-                  <div className="g2"><a href={resume_pdf}>Resume</a></div>
+                  
+                  <Grid columns={2}>
+                    <Grid.Column>
+                    <div className="g1">
+                      <Button basic href={cv_pdf}>CV</Button>
+                    </div>
+                    </Grid.Column>
+                    <Grid.Column>
+                    <div className="g2">
+                      <Button basic href={resume_pdf}>Resume</Button>
+                    </div>
+                    </Grid.Column>
+                  </Grid>
                   <div className="g3"><a href="https://www.linkedin.com/in/jonathan-a-saddler/">LinkedIn</a></div>
                   <div className="g4"><a href="https://www.researchgate.net/profile/Jonathan-Saddler">ResearchGate</a></div>
                 </Segment>
