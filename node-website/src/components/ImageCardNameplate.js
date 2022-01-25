@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
-import {Grid, Button, Card, Image} from 'semantic-ui-react';
+import React, { Component, Fragment } from 'react'
+import {Grid, Button, Card, Image, Segment} from 'semantic-ui-react';
 import "../css/ImageCard.css";
 import cv_pdf from '../images/homepage-img/JSaddler_CV.pdf';
 import resume_pdf from '../images/homepage-img/JSaddler_Resume.pdf';
 import SelfPic from "../images/homepage-img/SelfPicHome_Reduced.jpg"
-export class ImageCard extends Component {
+export class ImageCardNameplate extends Component {
     render() { 
     return (
-        <div className="d-e">
+        <Fragment>
+          <Grid.Column width={6}>
+          <div className="d-e">
           d-e
           <Card>
               <Image src={SelfPic} wrapped ui={false}/>
@@ -48,9 +50,14 @@ export class ImageCard extends Component {
                     </div>
               </Card.Content>
           </Card>
-        </div>
+          </div>
+          </Grid.Column>
+          <Grid.Column>
+              <Segment><h2>Jonathan A. Saddler, Ph. D.</h2></Segment>
+          </Grid.Column>
+        </Fragment>
     );
     }
 }
 
-export default ImageCard
+export default ImageCardNameplate
