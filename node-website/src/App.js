@@ -55,10 +55,10 @@ class App extends Component {
                 </Grid>
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row >
+            <Grid.Row>
               {/* <ImageCardNameplate/> */}
-              <Grid.Column><ImageCard /></Grid.Column>
-              <Grid.Column><NameplateSplash /></Grid.Column>
+              <Grid.Column width={6}><ImageCard /></Grid.Column>
+              <Grid.Column width={10}><NameplateSplash /></Grid.Column>
             </Grid.Row>
             <Grid.Row>
               <Grid.Column width={6}>
