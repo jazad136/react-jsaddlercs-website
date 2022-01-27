@@ -8,7 +8,6 @@ export class ImageCard extends Component {
     render() { 
     return (
         <div className="d-e">
-          d-e
           <Card>
               <Image src={SelfPic} wrapped ui={false}/>
               <Card.Content textAlign='center'>
