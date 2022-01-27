@@ -13,8 +13,6 @@ import SelfPic from './images/homepage-img/SelfPicHome_Reduced.jpg';
 //import Navbar from './Navbar'
 import Conferences from './components/Conferences'
 import Workshops from './components/Workshops';
-// eslint-disable-next-line
-import ImageCardNameplate from './components/ImageCardNameplate';
 import NameplateSplash from './components/NameplateSplash';
 import ImageCard from './components/ImageCard';
 
@@ -24,8 +22,9 @@ class App extends Component {
     WebFont.load({
         google: {
             families: [
-              'Oswald: 400,700',
-              'Raleway: 400,700']
+              'Oswald: 400, 400italic, 700',
+              'Raleway: 400, 400italic, 700',
+              'Droid Sans: 400, 400italic, 700']
         }
     })
   }
@@ -51,7 +50,7 @@ class App extends Component {
                   <Grid.Column><Segment className="b">Home</Segment></Grid.Column>
                   <Grid.Column></Grid.Column>
                   <Grid.Column></Grid.Column>
-                  <Grid.Column><Segment className="c4">c4</Segment></Grid.Column>
+                  <Grid.Column textAlign='center'><Segment className="c4">Show me the Pubs!</Segment></Grid.Column>
                 </Grid>
               </Grid.Column>
             </Grid.Row>
@@ -60,7 +59,8 @@ class App extends Component {
               <Grid.Column width={6}><ImageCard /></Grid.Column>
               <Grid.Column width={10}><NameplateSplash /></Grid.Column>
             </Grid.Row>
-            <Grid.Row>
+            {/* grid rows k l m*/}
+            {/* <Grid.Row>
               <Grid.Column width={6}>
                 <Segment className="k">
                   <div>k</div>
@@ -76,8 +76,9 @@ class App extends Component {
                   <Grid.Column><Segment className="L2">L2</Segment></Grid.Column>
                 </Grid>
               </Grid.Column>
-            </Grid.Row>
-            <Grid.Row columns={1}>
+            </Grid.Row> */}
+            {/* grid rows n o p*/}
+            {/* <Grid.Row columns={1}>
               <Grid.Column>
                 <Segment className="m">m</Segment>
               </Grid.Column>
@@ -92,7 +93,7 @@ class App extends Component {
               <Grid.Column>
                 <Segment className="p">p</Segment>
               </Grid.Column>
-            </Grid.Row>
+            </Grid.Row> */}
             <Grid.Row columns={1}>
               <Grid.Column>
                 <div className="q">q</div>
@@ -109,42 +110,21 @@ class App extends Component {
             <Grid.Row columns={1}>
               <Grid.Column>
                 <Segment className="r">
-                  r
                   <Conferences />
-                {/* <dl class="conference">
-                  <dt>Conference Proceedings</dt>
-                  <dd>
-                    <ol>
-                      <li><span class="me">Saddler, Jonathan A.</span>, Peterson, Cole S., Sama, Sanjana, 
-                      Nagaraj, Shruthi, Baysal, Olga, Guerrouj, Latifa, and Sharif, Bonita.
-                      &quot;Studying Developer Reading Behavior on Stack Overflow 
-                      during API Summarization Tasks.&quot;
-                      in <span class="paper">Proceedings 
-                      of the 27th International Conference on Software Analysis, 
-                      Evolution, and Reenginering (SANER 2020).</span>
-                      London, Ontario, Canada, February 2020.<br/>
-                      Available: https://doi.org/10.1109/SANER48275.2020.9054848<br/></li>
-                      
-                    </ol>
-                  </dd>
-                </dl> */}
                 </Segment>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row columns={1}>
               <Grid.Column>
                 <Segment className="s">
-                  s
                   <Workshops />
                 </Segment>
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row>
-              <Grid.Column><Segment className="t">t</Segment></Grid.Column>
+            <Grid.Row columns={1}>
+              <Grid.Column><Segment className="t"></Segment></Grid.Column>
             </Grid.Row>
-          </Grid>
-
-          
+          </Grid>          
         </Container>
       </Router>
     );
