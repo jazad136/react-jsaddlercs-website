@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import 'semantic-ui-css/semantic.min.css'
 import './css/App.css';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Link} from 'react-router-dom';
 import {Grid, Segment, Container} from 'semantic-ui-react';
 import WebFont from 'webfontloader';
 
@@ -33,31 +33,37 @@ class App extends Component {
   render() { 
     return (
       <Router>
-
-        Hi there.
         {/* <div className="container focus-content" style={{width: "80%",
   marginLeft: "10%"}}> */}
         <Container className="focus-content">
-          This is where content goes.
-          
           <Grid stackable columns={2}>
             <Grid.Row>
               <Grid.Column width={6}>
-                <Segment className="a">a</Segment>
+                <Segment color="black" className="a">
+                  <h3>Jonathan A. Saddler</h3></Segment>
               </Grid.Column>
               <Grid.Column width={10}>
                 <Grid columns={4}>
-                  <Grid.Column><Segment className="b">Home</Segment></Grid.Column>
+                  <Grid.Column>
+                    <Segment className="b"><Link to="/">Home</Link></Segment>
+                  </Grid.Column>
                   <Grid.Column></Grid.Column>
                   <Grid.Column></Grid.Column>
-                  <Grid.Column textAlign='center'><Segment className="c4">Show me the Pubs!</Segment></Grid.Column>
+                  <Grid.Column textAlign="center">
+                    <Segment basic className="c4">
+                      <a href="#pubs">Show me the Pubs!</a>
+                    </Segment>
+                  </Grid.Column>
                 </Grid>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
-              {/* <ImageCardNameplate/> */}
-              <Grid.Column width={6}><ImageCard /></Grid.Column>
-              <Grid.Column width={10}><NameplateSplash /></Grid.Column>
+              <Grid.Column width={6}>
+                <ImageCard />
+              </Grid.Column>
+              <Grid.Column width={10}>
+                <NameplateSplash />
+              </Grid.Column>
             </Grid.Row>
             {/* grid rows k l m*/}
             {/* <Grid.Row>
@@ -96,15 +102,32 @@ class App extends Component {
             </Grid.Row> */}
             <Grid.Row columns={1}>
               <Grid.Column>
-                <div className="q">q</div>
-                <Segment className="q1">q1</Segment>
+                {/* <div className="q">q</div> */}
+                <Segment basic textAlign='center' className="q1">Interests</Segment>
               </Grid.Column>
               <Grid.Column>
                 <Grid columns={3}>
-                  <Grid.Column><Segment className="q2-1">q2-1</Segment></Grid.Column>
-                  <Grid.Column><Segment className="q2-2">q2-2</Segment></Grid.Column>
-                  <Grid.Column><Segment className="q2-3">q2-3</Segment></Grid.Column>
+                  <Grid.Column>
+                    <Segment textAlign='center' className="q2-1">
+                      <h3>Software Engineering</h3>
+                    </Segment>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <Segment textAlign='center' className="q2-2">
+                      <h3>Program Comprehension</h3>
+                    </Segment>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <Segment textAlign='center' className="q2-3">
+                      <h3>Eyetracking</h3>
+                    </Segment>
+                  </Grid.Column>
                 </Grid>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row columns={1}>
+              <Grid.Column>
+                <Segment vertical/>
               </Grid.Column>
             </Grid.Row>
             <Grid.Row columns={1}>
@@ -122,9 +145,11 @@ class App extends Component {
               </Grid.Column>
             </Grid.Row>
             <Grid.Row columns={1}>
-              <Grid.Column><Segment className="t"></Segment></Grid.Column>
+              <Grid.Column>
+                <Segment className="t"></Segment>
+              </Grid.Column>
             </Grid.Row>
-          </Grid>          
+          </Grid>
         </Container>
       </Router>
     );
