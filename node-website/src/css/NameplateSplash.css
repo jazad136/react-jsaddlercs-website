@@ -1,25 +1,30 @@
 
-.nameplate .selfPic { 
+
+/* .nameplate .selfPic { 
     width: 100%;
+} */
+
+.splash { 
+    min-height: 175px;
 }
-/* .nameplate h2{  */
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* font-family: 'Oswald', sans-serif; */
-/* } */
-
-
-
 .splash-txt {
     width: 80%;
     display: block;
     float: left;
     font-size: 1.3em;
+    padding: 3ex 0;
+}
+.splash-pic {    
+    /* display: flex; */
+    display: block;
+    float: left;
+    width: 19%; 
+    position: relative;
+    bottom: -30px;
+    /* vertical-align: bottom; */
 }
 .splash-txt h1, .splash-txt h2, .splash-txt h3 { 
     margin: 2ex 0 2ex 0;
 }
-.splash-pic { 
-    display: block;
-    float: left;
-    width: 19%; 
-}
+
+.rg a { font-size: .9em; }
