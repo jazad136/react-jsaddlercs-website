@@ -21,10 +21,24 @@
     width: 19%; 
     position: relative;
     bottom: -30px;
+    right: 30px;
+    /* vertical-align: bottom; */
+}
+.splash-pic.middle {    
+    /* display: flex; */
+    display: block;
+    float: left;
+    width: 19%; 
+    position: relative;
+    bottom: -30px;
     /* vertical-align: bottom; */
 }
 .splash-txt h1, .splash-txt h2, .splash-txt h3 { 
     margin: 2ex 0 2ex 0;
+}
+
+.splash-txt.s1 h1, .splash-txt.s1 h2, .splash-txt.s1 h3 { 
+    margin: 0;
 }
 
 .rg a { font-size: .9em; }
