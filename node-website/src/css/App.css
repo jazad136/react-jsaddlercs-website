@@ -14,16 +14,22 @@ body {
   font-size: 1.2em;
   /* font-style: italic; */
 }
+
+.pubsLink h3 a, .pubsLink h3 a:visited { 
+  color: black;
+}
+
 /* .focus-content { */
   /* width: 80%;
   margin-left: 10%; */
 /* } */
 
-nav.navBar { 
+/* nav.navBar { 
   color: white;
   background-color: #666;
   margin: 20px 2.5% 0 0;
-} 
+}  */
+
 
 /* padding: 1ex 3% 1ex 3%; t r b l */
 

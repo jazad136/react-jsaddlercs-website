@@ -50,8 +50,8 @@ class App extends Component {
                   <Grid.Column></Grid.Column>
                   <Grid.Column></Grid.Column>
                   <Grid.Column textAlign="center">
-                    <Segment basic className="c4">
-                      <a href="#pubs">Show me the Pubs!</a>
+                    <Segment basic className="c4 pubsLink">
+                      <h3><a href="#pubs">Show me the Pubs!</a></h3>
                     </Segment>
                   </Grid.Column>
                 </Grid>
@@ -127,7 +127,8 @@ class App extends Component {
             </Grid.Row>
             <Grid.Row columns={1}>
               <Grid.Column>
-                <Segment vertical/>
+              {/* <Segment vertical/> */}
+              <a href="#pubs" name="pubs" id="pubs">&nbsp;</a> 
               </Grid.Column>
             </Grid.Row>
             <Grid.Row columns={1}>
