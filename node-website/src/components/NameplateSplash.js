@@ -26,12 +26,14 @@ export class NameplateSplash extends Component {
 
                 <div className="splash-txt">
                   <p>
-                    Determined software developer with a desire to publish
-                  interactive websites using the latest technologies. 
+                    {/* Determined software developer with a desire to publish
+                  interactive websites using the latest technologies.  */}
+                  Determined and focused on developer behavior
                   </p>
                   <p>
-                    A Ph. D. researcher interested in analyzing
-                    behaviors of software engineers.
+                    {/* A Ph. D. researcher interested in analyzing
+                    behaviors of software engineers. */}
+                    ... and how a vision gives way to information. 
                   </p>
                   {/* <h3>A Ph. D. Researcher</h3><br/>
                         <h3>A Gap Jumper</h3><br/>

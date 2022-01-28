@@ -127,8 +127,7 @@ class App extends Component {
             </Grid.Row>
             <Grid.Row columns={1}>
               <Grid.Column>
-              {/* <Segment vertical/> */}
-              <a href="#pubs" name="pubs" id="pubs">&nbsp;</a> 
+              <a href="#pubs" name="pubs" id="pubs" style={{color: "black"}}><Segment vertical></Segment></a> 
               </Grid.Column>
             </Grid.Row>
             <Grid.Row columns={1}>
