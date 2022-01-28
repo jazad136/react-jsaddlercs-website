@@ -4,7 +4,7 @@ import '../css/proceeding-block.css'
 export const Conferences = () => {
   return (
     <dl className="conference">
-        <dt>Conference Proceedings</dt>
+        <dt>Conference Publications</dt>
         <dd>
         <ol>
             <li><span className="me">Saddler, Jonathan A.</span>, Peterson, Cole S., Sama, Sanjana, 

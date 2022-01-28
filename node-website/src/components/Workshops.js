@@ -3,7 +3,7 @@ import '../css/proceeding-block.css';
 const Workshops = () => {
   return (
     <dl className="workshops">
-      <dt>Workshop Proceedings</dt>
+      <dt>Workshop Publications</dt>
       <dd><ol>
       <li>
         Peterson, C. S., <span className="me">Saddler, J.</span>, Blascheck, T., and Sharif, B. 
