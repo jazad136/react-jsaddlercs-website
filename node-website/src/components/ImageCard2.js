@@ -15,7 +15,7 @@ export class ImageCard2 extends Component {
             </Segment>
           </Grid.Column>
         </Grid.Row>
-        
+
         <Grid.Row>
           <Grid.Column>
             <Segment className="f">
@@ -32,8 +32,30 @@ export class ImageCard2 extends Component {
                   </h3>
                 </Grid.Column>
               </Grid>
-            </Segment>
+              <Grid columns={2} textAlign='center'>
+                <Grid.Column>
+                  <Button basic>
+                    GitHub
+                  </Button>
+                </Grid.Column>
+                <Grid.Column>
+                  <Button basic>
+                    LinkedIn
+                  </Button>
+                </Grid.Column>
+                <Grid.Column>
+                  <Button basic>
+                    Twitter
+                  </Button>
+                </Grid.Column>
+                <Grid.Column>
+                  <Button basic className='rg'>
+                    ResearchGate
+                  </Button>
+                </Grid.Column>
 
+              </Grid>
+            </Segment>
           </Grid.Column>
         </Grid.Row>
       </Grid>
