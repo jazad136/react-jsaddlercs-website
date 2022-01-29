@@ -13,11 +13,9 @@ import SelfPic from './images/homepage-img/SelfPicHome_Reduced.jpg';
 //import Navbar from './Navbar'
 import Conferences from './components/Conferences'
 import Workshops from './components/Workshops';
-import ImageCard from './components/ImageCard';
+import ImageCard from './components/ImageCard2';
 // eslint-disable-next-line
-import NameplateSplash from './components/NameplateSplash';
-import NameplateSplash2 from './components/NameplateSplash2';
-
+import NameplateSplash from './components/NameplateSplash2';
 class App extends Component { 
   constructor() {  
     super()   
@@ -64,7 +62,7 @@ class App extends Component {
                 <ImageCard />
               </Grid.Column>
               <Grid.Column width={10}>
-                <NameplateSplash2 />
+                <NameplateSplash />
               </Grid.Column>
             </Grid.Row>
             {/* grid rows k l m*/}

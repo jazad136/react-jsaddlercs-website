@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import {Grid, Button, Card, Image} from 'semantic-ui-react';
 import "../css/ImageCard.css";
-import cv_pdf from '../images/homepage-img/JSaddler_CV.pdf';
-import resume_pdf from '../images/homepage-img/JSaddler_Resume.pdf';
+import cvPdf from '../images/homepage-img/JSaddler_CV.pdf';
+import resumePdf from '../images/homepage-img/JSaddler_Resume.pdf';
 import SelfPic from "../images/homepage-img/SelfPicLin_Reduced.jpg"
 export class ImageCard extends Component {
     render() { 
@@ -12,10 +12,10 @@ export class ImageCard extends Component {
               <Card.Content textAlign='center'>
                 <Grid columns={2}>
                   <Grid.Column><div className="g1">
-                    <Button basic href={cv_pdf}>CV</Button>
+                    <Button basic href={cvPdf}>CV</Button>
                   </div></Grid.Column>
                   <Grid.Column><div className="g2">
-                    <Button basic href={resume_pdf}>Resume</Button>
+                    <Button basic href={resumePdf}>Resume</Button>
                   </div></Grid.Column>
                 </Grid>
               </Card.Content>
