@@ -71,17 +71,22 @@ class App extends Component {
                   </Grid.Column>
                   <Grid.Column width={10}>
                     <NameplateSplash />
+                    <div className='missing' style={{fontStyle: 'italic', textAlign: 'center'}}>
+                    <h3>Looking for more information? Something missing?</h3>
+                    <div>This react website was released Jan 31, 2022</div>
+                    <div>You can still access content from the <a href="http://saddlercoms.net/static-html">old website</a> until we get all fixed up here.</div>
+                    </div>
                   </Grid.Column>
                 </Grid.Row>
                 {/* grid rows k l m*/}
-              <Grid.Row>
+              {/* <Grid.Row>
                 <Grid.Column width={6}>
                   <Segment className="k">
-                    <div>k</div>
-                    <Segment className="k1">k1</Segment>
-                    <Segment className="k2">k2</Segment>
-                    <Segment className="k3">k3</Segment>
-                    <Segment className="k4">k4</Segment>
+                    <Segment className="k1">Most Recent Appointment</Segment>
+                    <div className="k2">Teaching Asst.</div>
+                    <div className="k3">Professor of</div>
+                    <div className="k4">Computer Science</div>
+                    East Carolina University
                   </Segment>
                 </Grid.Column>
                 <Grid.Column width={10}>
@@ -90,7 +95,7 @@ class App extends Component {
                     <Grid.Column><Segment className="L2">L2</Segment></Grid.Column>
                   </Grid>
                 </Grid.Column>
-              </Grid.Row>
+              </Grid.Row> */}
               {/* grid rows n o p*/}
               {/* <Grid.Row columns={1}>
                 <Grid.Column>
@@ -108,55 +113,56 @@ class App extends Component {
                   <Segment className="p">p</Segment>
                 </Grid.Column>
               </Grid.Row> */}
-                <Grid.Row columns={1}>
-                  <Grid.Column>
-                    {/* <div className="q">q</div> */}
-                    <Segment basic textAlign='center' className="q1">Interests</Segment>
-                  </Grid.Column>
-                  <Grid.Column>
-                    <Grid columns={3}>
-                      <Grid.Column>
-                        <Segment textAlign='center' className="q2-1">
-                          <h3>Software Engineering</h3>
-                        </Segment>
-                      </Grid.Column>
-                      <Grid.Column>
-                        <Segment textAlign='center' className="q2-2">
-                          <h3>Program Comprehension</h3>
-                        </Segment>
-                      </Grid.Column>
-                      <Grid.Column>
-                        <Segment textAlign='center' className="q2-3">
-                          <h3>Eyetracking</h3>
-                        </Segment>
-                      </Grid.Column>
-                    </Grid>
-                  </Grid.Column>
-                </Grid.Row>
-                <Grid.Row columns={1}>
-                  <Grid.Column>
-                  <a href="#pubs" name="pubs" id="pubs" style={{color: "black"}}><Segment vertical></Segment></a> 
-                  </Grid.Column>
-                </Grid.Row>
-                <Grid.Row columns={1}>
-                  <Grid.Column>
-                    <Segment className="r">
-                      <Conferences />
-                    </Segment>
-                  </Grid.Column>
-                </Grid.Row>
-                <Grid.Row columns={1}>
-                  <Grid.Column>
-                    <Segment className="s">
-                      <Workshops />
-                    </Segment>
-                  </Grid.Column>
-                </Grid.Row>
-                <Grid.Row columns={1}>
-                  <Grid.Column>
-                    <Segment className="t"></Segment>
-                  </Grid.Column>
-                </Grid.Row>
+              {/* row q Interests */}
+              {/* <Grid.Row columns={1}>
+                <Grid.Column>
+                  <Segment basic textAlign='center' className="q1">Interests</Segment>
+                </Grid.Column>
+                <Grid.Column>
+                  <Grid columns={3}>
+                    <Grid.Column>
+                      <Segment textAlign='center' className="q2-1">
+                        <h3>Software Engineering</h3>
+                      </Segment>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Segment textAlign='center' className="q2-2">
+                        <h3>Program Comprehension</h3>
+                      </Segment>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Segment textAlign='center' className="q2-3">
+                        <h3>Eyetracking</h3>
+                      </Segment>
+                    </Grid.Column>
+                  </Grid>
+                </Grid.Column>
+              </Grid.Row> */}
+              {/* Publications */}
+              <Grid.Row columns={1}>
+                <Grid.Column>
+                <a href="#pubs" name="pubs" id="pubs" style={{color: "black"}}><Segment vertical></Segment></a> 
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row columns={1}>
+                <Grid.Column>
+                  <Segment className="r">
+                    <Conferences />
+                  </Segment>
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row columns={1}>
+                <Grid.Column>
+                  <Segment className="s">
+                    <Workshops />
+                  </Segment>
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row columns={1}>
+                <Grid.Column>
+                  <Segment className="t"></Segment>
+                </Grid.Column>
+              </Grid.Row>
               </Fragment>
               )}/>
               <Route exact path='/data' render={(props) => (
