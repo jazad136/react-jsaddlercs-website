@@ -2,7 +2,7 @@ import React from 'react';
 
 export const SaddlerEFSAinputs = () => {
   return (
-    <table width="745" border="1" cellpadding="2">
+    <table>
       <caption>Input Files</caption>
       <tbody>
         <tr>
