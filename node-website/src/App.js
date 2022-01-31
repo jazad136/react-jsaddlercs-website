@@ -74,7 +74,7 @@ class App extends Component {
                   </Grid.Column>
                 </Grid.Row>
                 {/* grid rows k l m*/}
-              {/* <Grid.Row>
+              <Grid.Row>
                 <Grid.Column width={6}>
                   <Segment className="k">
                     <div>k</div>
@@ -90,7 +90,7 @@ class App extends Component {
                     <Grid.Column><Segment className="L2">L2</Segment></Grid.Column>
                   </Grid>
                 </Grid.Column>
-              </Grid.Row> */}
+              </Grid.Row>
               {/* grid rows n o p*/}
               {/* <Grid.Row columns={1}>
                 <Grid.Column>
