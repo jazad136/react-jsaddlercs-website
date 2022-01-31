@@ -4,16 +4,32 @@ body {
   font-size: 16px;
 }
 
-.focus-content {
-  /* width: 80%;
-  margin-left: 10%; */
+.nameplate h2{ 
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: "Oswald", sans-serif;
 }
 
-nav.navBar { 
+.splash-txt h1, .splash-txt h2, .splash-txt h3 { 
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+  /* font-style: italic; */
+}
+
+.pubsLink h3 a, .pubsLink h3 a:visited { 
+  color: black;
+}
+
+/* .focus-content { */
+  /* width: 80%;
+  margin-left: 10%; */
+/* } */
+
+/* nav.navBar { 
   color: white;
   background-color: #666;
   margin: 20px 2.5% 0 0;
-} 
+}  */
+
 
 /* padding: 1ex 3% 1ex 3%; t r b l */
 
