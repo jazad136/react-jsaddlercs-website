@@ -40,7 +40,8 @@ export class NameplateSplash2 extends Component {
                   />
                 </div> */}
                 <div className="splash-txt s1">
-                    Determined and focused on developer behavior
+                    Focused on developer comprehension <br/>
+                    and behavior...
                 </div>
                 <div className="splash-pic middle">
                   <img

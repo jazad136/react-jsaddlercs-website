@@ -48,7 +48,7 @@ class App extends Component {
                     <Segment className="b"><Link to="/">Home</Link></Segment>
                   </Grid.Column>
                   <Grid.Column>
-                    <Segment className="c1"><Link to="/">Data</Link></Segment>
+                    {/* <Segment className="c1"><Link to="/">Data</Link></Segment> */}
                   </Grid.Column>
                   <Grid.Column></Grid.Column>
                   <Grid.Column textAlign="center">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Image, Button, Segment} from 'semantic-ui-react';
-import selfPic from "../images/homepage-img/SelfPicBlue_cr.jpg"
+import selfPic from "../images/homepage-img/SelfPicLin_cr.jpg"
 import cvPdf from '../images/homepage-img/JSaddler_CV.pdf';
 import resumePdf from '../images/homepage-img/JSaddler_Resume.pdf';
 import "../css/ImageCard.css";
@@ -30,9 +30,9 @@ export class ImageCard2 extends Component {
               </Grid>
               <Grid columns={1}>
                 <Grid.Column className='jobm'>
-                  <h4 style={{marginTop: "-10px"}}>
-                    I'm on the Job Market
-                  </h4>
+                  <h5 style={{marginTop: "-10px"}}>
+                    I'm on the job market
+                  </h5>
                 </Grid.Column>
               </Grid>
               <Grid columns={2} textAlign='center'>
