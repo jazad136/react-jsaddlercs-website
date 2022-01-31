@@ -30,6 +30,10 @@ class App extends Component {
   }
   // thanks goes out to https://www.section.io/engineering-education/transitioning-from-bootstrap-to-semantic-ui-react/
   // for a tutorial on transitioning from bootstrap to react
+  // Remember https://medium.com/@svinkle/how-to-deploy-a-react-app-to-a-subdirectory-f694d46427c1
+  // for how to deploy using relative links. 
+  // remember to update updated link from old static website. 
+
   MenuBar() { 
     return (
       <Grid.Row>
