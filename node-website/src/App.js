@@ -30,35 +30,38 @@ class App extends Component {
   }
   // thanks goes out to https://www.section.io/engineering-education/transitioning-from-bootstrap-to-semantic-ui-react/
   // for a tutorial on transitioning from bootstrap to react
+  MenuBar() { 
+    return (
+      <Grid.Row>
+        <Grid.Column width={6}>
+          <Segment color="black" className="a">
+            <h3>Jonathan A. Saddler</h3></Segment>
+        </Grid.Column>
+        <Grid.Column width={10}>
+          <Grid columns={4}>
+            <Grid.Column>
+              <Segment className="b"><Link to="/">Home</Link></Segment>
+            </Grid.Column>
+            <Grid.Column>
+              {/* <Segment className="c1"><Link to="/">Data</Link></Segment> */}
+            </Grid.Column>
+            <Grid.Column></Grid.Column>
+            <Grid.Column textAlign="center">
+              <Segment basic className="c4 pubsLink">
+                <h3><a href="#pubs">Show me the Pubs!</a></h3>
+              </Segment>
+            </Grid.Column>
+          </Grid>
+        </Grid.Column>
+      </Grid.Row>
+    );
+  }
   render() { 
     return (
       <Router>
-        {/* <div className="container focus-content" style={{width: "80%",
-  marginLeft: "10%"}}> */}
         <Container className="focus-content">
           <Grid stackable columns={2}>
-            <Grid.Row>
-              <Grid.Column width={6}>
-                <Segment color="black" className="a">
-                  <h3>Jonathan A. Saddler</h3></Segment>
-              </Grid.Column>
-              <Grid.Column width={10}>
-                <Grid columns={4}>
-                  <Grid.Column>
-                    <Segment className="b"><Link to="/">Home</Link></Segment>
-                  </Grid.Column>
-                  <Grid.Column>
-                    {/* <Segment className="c1"><Link to="/">Data</Link></Segment> */}
-                  </Grid.Column>
-                  <Grid.Column></Grid.Column>
-                  <Grid.Column textAlign="center">
-                    <Segment basic className="c4 pubsLink">
-                      <h3><a href="#pubs">Show me the Pubs!</a></h3>
-                    </Segment>
-                  </Grid.Column>
-                </Grid>
-              </Grid.Column>
-            </Grid.Row>
+            {this.MenuBar()}
             <Grid.Row>
               <Grid.Column width={6}>
                 <ImageCard />
