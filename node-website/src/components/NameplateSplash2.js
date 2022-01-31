@@ -15,7 +15,7 @@ export class NameplateSplash2 extends Component {
         </Grid.Row>
         <Grid.Row>
           <Grid.Column>
-            <Segment className='splash'>
+            <Segment basic className='splash'>
               <Grid columns={2}>
                 {/* <Grid.Column>
                     <div class="g1">The Splash</div>

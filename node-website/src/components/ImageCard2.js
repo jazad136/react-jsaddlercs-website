@@ -7,58 +7,62 @@ import "../css/ImageCard.css";
 export class ImageCard2 extends Component {
   render() {
     return (
+      <Segment>
       <Grid columns={1}>
         <Grid.Row>
           <Grid.Column>
-            <Segment className="selfPic">
+            <div className="selfPic">
               <Image bordered circular src={selfPic}/>
-            </Segment>
+            </div>
           </Grid.Column>
         </Grid.Row>
 
         <Grid.Row>
           <Grid.Column>
-            <Segment className="f">
+            <div className="f">
               <Grid columns={2}>
                 <Grid.Row textAlign='center'>
-                  <Grid.Column><Button basic href={cvPdf}>CV</Button></Grid.Column>
-                  <Grid.Column><Button basic href={resumePdf}>Resume</Button></Grid.Column>
+                  <Grid.Column className="f1 cv-btn" textAlign='center'>
+                    <Button basic color="black" href={cvPdf}>CV</Button></Grid.Column>
+                  <Grid.Column className="f1 resume-btn" textAlign='center'>
+                    <Button basic color="black" href={resumePdf}>Resume</Button></Grid.Column>
                 </Grid.Row>
               </Grid>
               <Grid columns={1}>
                 <Grid.Column className='jobm'>
-                  <h3>
+                  <h4 style={{marginTop: "-10px"}}>
                     I'm on the Job Market
-                  </h3>
+                  </h4>
                 </Grid.Column>
               </Grid>
               <Grid columns={2} textAlign='center'>
                 <Grid.Column>
-                  <Button basic>
+                  <Button basic color="blue">
                     GitHub
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
-                  <Button basic>
+                  <Button basic color="blue">
                     LinkedIn
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
-                  <Button basic>
+                  <Button basic color="blue">
                     Twitter
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
-                  <Button basic className='rg'>
+                  <Button basic color="blue" className='rg'>
                     ResearchGate
                   </Button>
                 </Grid.Column>
 
               </Grid>
-            </Segment>
+            </div>
           </Grid.Column>
         </Grid.Row>
       </Grid>
+      </Segment>
     );
   }
 }
