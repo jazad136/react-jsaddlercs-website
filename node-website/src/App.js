@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import 'semantic-ui-css/semantic.min.css'
 import './css/App.css';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
@@ -47,7 +47,9 @@ class App extends Component {
                   <Grid.Column>
                     <Segment className="b"><Link to="/">Home</Link></Segment>
                   </Grid.Column>
-                  <Grid.Column></Grid.Column>
+                  <Grid.Column>
+                    <Segment className="c1"><Link to="/">Data</Link></Segment>
+                  </Grid.Column>
                   <Grid.Column></Grid.Column>
                   <Grid.Column textAlign="center">
                     <Segment basic className="c4 pubsLink">
