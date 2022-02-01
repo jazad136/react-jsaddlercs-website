@@ -16,9 +16,9 @@ import Workshops from './components/Workshops';
 import ImageCard from './components/ImageCard2';
 // eslint-disable-next-line
 import NameplateSplash from './components/NameplateSplash2';
-import IconBunchBackend from './components/IconBunchBackend';
-import { IconBunchFrontend } from './components/IconBunchFrontend';
 import InterestHeaderSet from './components/InterestHeaderSet';
+import FrontendInterest from './components/FrontendInterest';
+import BackendInterest from './components/BackendInterest';
 class App extends Component { 
   constructor() {  
     super()   
@@ -50,7 +50,7 @@ class App extends Component {
               <Segment className="b"><Link to="/">Home</Link></Segment>
             </Grid.Column>
             <Grid.Column>
-              <Segment className="c1"><Link to="/data/">Data</Link></Segment>
+              <Segment className="c1"><Link to="/data">Data</Link></Segment>
             </Grid.Column>
             <Grid.Column></Grid.Column>
             <Grid.Column textAlign="center">
@@ -65,7 +65,7 @@ class App extends Component {
   }
   render() { 
     return (
-      <Router>
+      <Router basename={'/react'}>
         <Container className="focus-content">
           <Grid stackable columns={2}>
             {this.MenuBar()}
@@ -127,10 +127,20 @@ class App extends Component {
                     <h3>Interests</h3>
                   </Segment>
                 </Grid.Column>
+              </Grid.Row>
+              <Grid.Row columns={1}>
                 <Grid.Column>
                   <Grid columns={2}>
-                    <InterestHeaderSet first={true}/>
-                    
+                    <InterestHeaderSet highlight={true} frontend={true}/>
+                    <FrontendInterest/>
+                  </Grid>
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row columns={1}>
+                <Grid.Column>
+                  <Grid columns={2}>
+                    <InterestHeaderSet highlight={true} frontend={false}/>
+                    <BackendInterest/>
                   </Grid>
                 </Grid.Column>
               </Grid.Row>
@@ -161,7 +171,7 @@ class App extends Component {
               </Grid.Row>
               </Fragment>
               )}/>
-              <Route exact path='/data' render={(props) => (
+              <Route exact path="/data" render={(props) => (
                 <Data/>
               )}/> 
             </Switch>

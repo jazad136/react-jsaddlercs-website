@@ -4,12 +4,12 @@ import {Grid, Segment} from 'semantic-ui-react'
 export class InterestHeaderSet extends Component {
   
   static propTypes = {
-    first : PropTypes.bool,
-    highlight : PropTypes.bool
+    frontend : PropTypes.bool.isRequired,
+    highlight : PropTypes.bool.isRequired
   }
-  getInterestSet(first, highlight) {
+  getInterestSet(highlight, frontend) {
     if(!highlight) { 
-    return (
+      return (
       <Fragment>
         <Grid.Column>
           <Segment textAlign='center' className='intHeader'>
@@ -23,44 +23,44 @@ export class InterestHeaderSet extends Component {
         </Grid.Column>
        </Fragment> );
     } 
-    if(first) { 
+    if(frontend) { 
       return  (
       <Fragment>
         <Grid.Column>
-          <Segment textAlign='center' className='intHeader'>
+          <Segment color='blue' textAlign='center' className='intHeader'>
             <h3>Frontend Web Development</h3>
           </Segment>
         </Grid.Column>
-        <Grid.Column>
+        {/* <Grid.Column>
             <Segment disabled textAlign='center' className='intHeader'>
-              <h3>Backend Web Development</h3>
+              Backend Web Development
             </Segment>
-        </Grid.Column>
+        </Grid.Column> */}
        </Fragment>
        );
-       }
-       else {
-         return (
-         <Fragment>
-          <Grid.Column>
-            <Segment disabled textAlign='center' className='intHeader'>
-              <h3>Frontend Web Development</h3>
-            </Segment>
-          </Grid.Column>
-          <Grid.Column>
-            <Segment textAlign='center' className='intHeader'>
-              <h3>Backend Web Development</h3>
-            </Segment>
-          </Grid.Column>
-        </Fragment>
-        );
       }
+      else {
+        return (
+        <Fragment>
+        {/* <Grid.Column>
+          <Segment disabled textAlign='center' className='intHeader'>
+            Frontend Web Development
+          </Segment>
+        </Grid.Column> */}
+        <Grid.Column>
+          <Segment color='blue' textAlign='center' className='intHeader'>
+            <h3>Backend Web Development</h3>
+          </Segment>
+        </Grid.Column>
+      </Fragment>
+      );
+    }
   }
   render() {
-    const {first} = this.props;
+    const {highlight, frontend} = this.props;
     return (
       <Fragment>
-        {this.getInterestSet(first)}
+        {this.getInterestSet(highlight, frontend)}
       </Fragment>
     );
   }
