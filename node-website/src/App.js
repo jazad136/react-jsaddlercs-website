@@ -16,6 +16,8 @@ import Workshops from './components/Workshops';
 import ImageCard from './components/ImageCard2';
 // eslint-disable-next-line
 import NameplateSplash from './components/NameplateSplash2';
+import IconBunchBackend from './components/IconBunchBackend';
+import { IconBunchFrontend } from './components/IconBunchFrontend';
 class App extends Component { 
   constructor() {  
     super()   
@@ -118,9 +120,11 @@ class App extends Component {
                 </Grid.Column>
               </Grid.Row> */}
               {/* row q Interests */}
-              {/* <Grid.Row columns={1}>
+              <Grid.Row columns={1}>
                 <Grid.Column>
-                  <Segment basic textAlign='center' className="q1">Interests</Segment>
+                  <Segment basic textAlign='center' className="q1">
+                    <h3>Interests</h3>
+                  </Segment>
                 </Grid.Column>
                 <Grid.Column>
                   <Grid columns={3}>
@@ -141,7 +145,7 @@ class App extends Component {
                     </Grid.Column>
                   </Grid>
                 </Grid.Column>
-              </Grid.Row> */}
+              </Grid.Row>
               {/* Publications */}
               <Grid.Row columns={1}>
                 <Grid.Column>
