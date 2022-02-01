@@ -1,0 +1,24 @@
+﻿Table 4: Types and Counts of Constraint Rules Uses,,,,,,,,,,
+Task,Application,Variant,Rules HPRT,Rules EFS,EFS Rule Types,,,,,Widgets
+,,,,,REQUIRE,EXCLUDE,ORDER,REPEAT,ATOMIC,Count
+Format Text,TerpWord,M,4,7,4,-,2,-,-,9
+,,MK,7,9,4,2,2,1,-,12
+,,MKT,7,10,4,3,2,1,-,15
+Insert Hyperlink,TerpWord,M,6,7,5,-,2,-,-,9
+,,MK,8,9,5,2,2,-,-,11
+,,MKT,8,9,5,2,2,-,-,11
+Absolute Value,TerpWord,M,6,8,5,-,2,1,-,11
+,,MK,8,10,5,2,2,1,-,14
+,,MKT,9,11,5,3,2,1,-,16
+Insert Table,TerpWord,M,4,6,4,-,1,1,-,7
+,,MK,6,8,4,2,1,1,-,9
+,,MKT,7,9,4,3,1,1,-,11
+Comment Indent,DrJava,,5,8,3,3,1,1,-,9
+Search Options,DrJava,,6,7,5,1,1,-,-,11
+Bold Center,TerpWord,,6,8,4,2,1,1,-,12
+Compile File,DrJava,,NA,6,2,2,1,1,-,9
+Commented Text,JEdit,TC,NA,2,1,1,-,-,-,11
+Commented Text,JEdit,BG,NA,3,1,1,-,-,1,12
+Commented Text,JEdit,FULL,NA,7,1,-,-,4,2,13
+Four Paragraphs,JEdit,W,NA,12,4,3,1,-,4,12
+Four Paragraphs,JEdit,MD,NA,16,6,3,2,1,4,12
