@@ -18,6 +18,7 @@ import ImageCard from './components/ImageCard2';
 import NameplateSplash from './components/NameplateSplash2';
 import IconBunchBackend from './components/IconBunchBackend';
 import { IconBunchFrontend } from './components/IconBunchFrontend';
+import InterestHeaderSet from './components/InterestHeaderSet';
 class App extends Component { 
   constructor() {  
     super()   
@@ -127,22 +128,9 @@ class App extends Component {
                   </Segment>
                 </Grid.Column>
                 <Grid.Column>
-                  <Grid columns={3}>
-                    <Grid.Column>
-                      <Segment textAlign='center' className="q2-1">
-                        <h3>Software Engineering</h3>
-                      </Segment>
-                    </Grid.Column>
-                    <Grid.Column>
-                      <Segment textAlign='center' className="q2-2">
-                        <h3>Program Comprehension</h3>
-                      </Segment>
-                    </Grid.Column>
-                    <Grid.Column>
-                      <Segment textAlign='center' className="q2-3">
-                        <h3>Eyetracking</h3>
-                      </Segment>
-                    </Grid.Column>
+                  <Grid columns={2}>
+                    <InterestHeaderSet first={true}/>
+                    
                   </Grid>
                 </Grid.Column>
               </Grid.Row>
