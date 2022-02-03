@@ -7,8 +7,6 @@ import WebFont from 'webfontloader';
 import Data from './sites/data/Data'
 // import {BrowserRouter as Switch, Route} from 'react-router-dom';
 // images and navbars - temporarily disabled. 
-// eslint-disable-next-line
-import SelfPic from './images/homepage-img/SelfPicHome_Reduced.jpg';
 
 //import Navbar from './Navbar'
 import Conferences from './components/Conferences'
