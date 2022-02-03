@@ -5,10 +5,18 @@ export class IconBunchFrontend extends Component {
   render() {
     return (
     <div>
-        <Icon name='html5' size='huge'/>
-        <Icon name='react' size='huge'/>
-        <Icon name='ember' size='huge'/>
-        <Icon name='node' size='huge'/>
+        <div className="bunch-icon">
+          <Icon name='html5' size='huge'/>
+        </div>
+        <div className="bunch-icon">
+          <Icon name='react' size='huge'/>
+        </div>
+        <div className="bunch-icon">
+          <Icon name='ember' size='huge'/>
+        </div>
+        <div className="bunch-icon">
+          <Icon name='node' size='huge'/>
+        </div>
     </div>
     );
   }
