@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Image, Button, Segment} from 'semantic-ui-react';
 import selfPic from "../images/homepage-img/SelfPicLin_cr.jpg"
-import cvPdf from '../images/homepage-img/JSaddler_CV.pdf';
+import cvPdf from '../images/homepage-img/JSaddler_CV_Web.pdf';
 import resumePdf from '../images/homepage-img/JS_Resume_Web.pdf';
 import "../css/ImageCard.css";
 export class ImageCard2 extends Component {
