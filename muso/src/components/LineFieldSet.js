@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {Grid, Segment} from 'semantic-ui-react';
+import {Grid} from 'semantic-ui-react';
+import '../css/LineFieldSet.css'
 
 export class LineFieldSet extends Component {
   static propTypes = {
@@ -10,24 +11,47 @@ export class LineFieldSet extends Component {
   render() {
     const {lineNum, classStub} = this.props;
     return (
-    <Grid columns={3}>
-      <Grid.Row>
-          <Grid.Column>
-            <div className="b1">USE</div>
+      <Grid columns={3}>
+        <Grid.Row>
+          <Grid.Column width={1} textAlign='right'>
+            {/* <div className="b1">USE</div> */}
+            <div className={`${classStub}1`}>
+              {classStub}1<br/>
+              <strong>USE</strong></div>
           </Grid.Column>
-          <Grid.Column>
-            <div className="b1-2">Line {lineNum}</div>
+          <Grid.Column width={2}>
+            <div className={`${classStub}1-2`}>
+              {classStub}1-2<br/>
+              <strong>Line {lineNum}</strong></div>
           </Grid.Column>
-      </Grid.Row>
-      <Grid.Row>
-        <Grid.Column><Segment className="b2">
-          <div>{classStub}2</div>
-          <input type="text"/>
-        </Segment></Grid.Column>
-        <Grid.Column><Segment className="b2-2">{classStub}2-2</Segment></Grid.Column>
-        <Grid.Column><Segment className="b2-3">{classStub}2-3</Segment></Grid.Column>
-      </Grid.Row>
-    </Grid>
+          <Grid.Column width={8}>
+            <div className={`${classStub}1-3`}>
+                {classStub}1-3<br/>
+            </div>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={1} textAlign='right'>
+            <div className={`${classStub}2`}>
+                {classStub}2<br/>
+                <input 
+                type="checkbox" 
+                id={`useline-${classStub}`}/>
+            </div>
+          </Grid.Column>
+          <Grid.Column width={2}>
+            <div basic className={`${classStub}2-2`}>
+              {classStub}2-2
+            </div>
+          </Grid.Column>
+          <Grid.Column width={10}>
+            <div className={`${classStub}2-3`}>
+              {classStub}2-3<br/>
+              <input className={`tokens-${classStub}`} type="text" />
+            </div>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     );
   }
 }
