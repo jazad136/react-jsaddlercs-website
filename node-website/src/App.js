@@ -12,7 +12,6 @@ import Data from './sites/data/Data'
 import Conferences from './components/Conferences'
 import Workshops from './components/Workshops';
 import ImageCard from './components/ImageCard2';
-// eslint-disable-next-line
 import NameplateSplash from './components/NameplateSplash2';
 import InterestHeaderSet from './components/InterestHeaderSet';
 import FrontendInterest from './components/FrontendInterest';
@@ -53,7 +52,7 @@ class App extends Component {
             <Grid.Column></Grid.Column>
             <Grid.Column textAlign="center">
               <Segment basic className="c4 pubsLink">
-                <h3><a href="#pubs">Show me the Pubs!</a></h3>
+                <h3><a href="#pubs"><span className="small">Show me the</span> Pubs!</a></h3>
               </Segment>
             </Grid.Column>
           </Grid>
