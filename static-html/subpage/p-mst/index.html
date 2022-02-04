@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Jonathan A. Saddler, Ph. D., East Carolina University</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<link href="../../bootstrap/bootstrap-4.5.3.min.css" type="text/css" rel="stylesheet"/>  
+<link href="../../css/index.css" type="text/css" rel="stylesheet"/>
+
+<script src="../../jquery/jquery-3.5.1.min.js"></script>
+<script>
+  // JQuery 
+  $(document).ready(function(){
+  //$("#show-bar").addClass("invisible");
+  
+  $("#hide-menu").click(function(){
+    $("#show-bar").removeClass("visible");
+    $("#show-bar").addClass("invisible");    
+    });
+  });
+</script>
+</head>
+<body>
+<div id="show-bar" class="visible">
+  <div id="nav-headers">
+    <div><a href="../../index.html">Home</a></div>
+    <div><a href="../../teaching/index.html">Teaching</a></div>
+    <div><a href="../../class/alg2/index.html">Algorithms (2000)</a></div>
+    <div><a href="../../class/ds5/index.html">Discrete Structures (5005)</a></div>
+    <div><a href="../../class/sf1/index.html">Soft. Eng. Founds (1000)</a></div>
+  </div>
+</div>
+<div id="focus-target">
+
+<button id="hide-menu">Click to hide menu</button>
+<h4 style="font-size:.8em">(Refresh to restore)</h4>
+
+<div id="tc-header">
+  <h2>Jonathan A. Saddler, Ph. D.</h2>
+  <h2 class="sub-name">East Carolina University</h2>
+</div>
+
+<div id="navs">
+  <div id="nav-subhead">
+    <h4>SENG 2000</h4>
+    <ul class="nav-links">
+      <li class="list-inline-item"><a href="../i-s-l/index.html">
+	Insertion Sort
+      </a></li>
+      <li class="list-inline-item"><a href="../q-s-lsz/index.html">
+	Quicksort
+      </a></li>
+      <li class="list-inline-item"><a href="../p-mst/index.html">
+	Prim's
+      </a></li>
+    </ul>
+  </div>
+</div>
+<div id="page-headers">
+  <h2 class="subtitle">Selected Algorithms</h2>
+  <h2 class="algo">Prim's Min. Spanning Tree Finder P-MST(G)</h2>
+</div>
+<div class="writeup">
+    <p>We used Prim's Minimum Spanning Tree Finder algorithm to see applications of dynamic programming in an area other than strict sequences of units. Before addressing Prim's, we covered other supporting methods of graph search such as highly related Breadth First Search, whose methods of selecting nodes from the top down helped us understand Prim's. Algorithms like Prim's take a set of units and basic relationships between them, and output a new network of relationships. This algorithm takes relations that have a weight, and outputs a set of relations that meet the criteria of a tree-graph[1] with a minimum weight.</p>
+    
+    <p>Rather than go over a strict algorithm that involved implementation details beyond the scope of what the course could cover, we set out to identify the patterns of choice that make Prim's algorithm work at each level of the algorithm. Some of the images shown below help highlight parts of live demonstrations provided in-class, where we used a "magnifying glass" approach. Prim's makes "local" choices, choices based on information it knows about only part of the solution, to incrementally build a tree that it can output. 
+</p>
+  </div>
+  <div id="samples" class="container">
+    <dl class="row">
+      <dt class="col-sm-6">
+	<h3 class="title">Graph Algorithms in General</h3>
+	<div class="sample-img">
+	  <img src="../../images/alg-images/SnipAD_GraphGeneral.png"/>
+	</div>
+      </dt>
+      <dd class="col-sm-6 right">
+	<p>Before going over this algorithm of building trees, we explored the meaning behind the units used in said algorithms, by covering the &quot;node&quot; and the concept of &quot;relations&quot; which control when relationships are shown between them. </p>
+	<p>Illustrations of how graph algorithms such as Breadth First Search were not done through pseudocode, but through demonstration only that were repeated throughout multiple courses. </p>
+      </dd>
+      <dt class="col-sm-6">
+	<h3 class="title">Demonstratory Assignments</h3>
+	<div class="sample-img">
+	  <img src="../../images/alg-images/SnapAD_PrimsNoGraph.png"/>
+	</div>
+      </dt>
+      <dd class="col-sm-6 right">
+	<p>Students were guided through the workmanship of Prim's algorithm using multiple examples. One example did not involve a visible graph, and instead used progress tables to track progression, where we could track together instances of making greedy local choices at each step.</p>
+	<p>To support those who might be helped, the assignment itself included graphical examples to go along with it. Time available in the semester reduced our ability to review together each important concept of graph algorithms like Prim's, as these came later in the course, so assignments held the brunt of instruction for this part of the course.</p>
+      </dd>
+    </dl>
+  </div>
+</div>
+<div id="footer-content">
+  <hr/>
+  <div class="footer-pic">
+    <a href="http://www.cs.ecu.edu/saddler/index.html"><img alt="(Picture of Jonathan A. Saddler, Ph. D.)" class="self-pic" src="http://www.cs.ecu.edu/saddler/images/index-images/self_pic_F2020.jpg"/></a>
+  </div>
+  <ul>
+    <li class="nam">Jonathan A. Saddler, Ph. D., East Carolina University</li>
+    <li class="bdng">Science &amp; Technology Building, Rm. C117</li>
+    <li class="eml">email: saddlerj20@ecu(dot)edu</li>
+    <li class="return"><a href="http://www.cs.ecu.edu/saddler/index.html">Return to Home</a></li>
+  </ul>
+</div>
+</body>
+</html>
