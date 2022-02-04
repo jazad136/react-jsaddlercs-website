@@ -1,6 +1,7 @@
 
 body { 
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Raleway', sans-serif; */
 }
 /* .App-logo {
   animation: App-logo-spin infinite 20s linear;
