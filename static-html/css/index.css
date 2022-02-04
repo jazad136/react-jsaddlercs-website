@@ -1,0 +1,212 @@
+/* CSS Document */
+body {
+    font-family: "Verdana", "Georgia", "Arial", "Helvetica", sans-serif;
+    /*font-family: "Times Roman", times, serif;*/
+    /*font-family: "Arial", "Helvetica", sans-serif;*/
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+}
+
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.1em; padding-bottom: 10px;}
+h5 { font-size: .8em; padding-bottom: 10px;}
+div#focus-target { 
+    margin-left: 20%; /*20%*/
+    margin-top: 5ex;
+    margin-bottom: 20px;
+    width:60%;
+}
+
+#show-bar {
+    width:100%;
+    height: 20px;
+    text-align:left;
+    background-color: black;
+}
+#nav-headers  {
+    color: white;
+    font-size: small;
+    font-weight: normal;
+    padding-left: 2%;
+}
+#nav-headers div {
+    display: inline;
+    margin-right: 2%;
+}
+#nav-headers .right {
+    margin-left: 8%;
+    text-align: right;
+}
+#nav-headers.research .right {
+    margin-left: 70%;
+    text-align: right;
+}
+#nav-headers a, #nav-headers a:visited {
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-right: thin solid white;
+}
+
+#navs {margin-top: 20px;}
+
+#nav-clshead{
+    font-size: 1.0em;
+}
+#nav-subhead h2 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#nav-subhead h4 {
+    font-size: .8em;
+    font-weight: bold;
+}
+
+#page-headers a, #page-headers a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+#nav-subhead-links a, #nav-subhead-links a:visited {
+    text-decoration: underline;
+    color: black;
+}
+
+.nav-links a, .nav-links a:visited {
+    text-decoration: underline;
+    color: black;
+}
+ul.nav-links { padding-left: 0; }
+
+
+
+#tc-header {
+    width:70%;
+    margin-left: 15%;
+}
+#tc-header h2 {
+    font-family: "Courier New", "Monospace", monospace;
+    margin-bottom: .5ex;
+    font-weight: bold;
+}
+#tc-header h2:nth-child(2) {
+    margin-top: .5ex;
+    font-size: 1.0em;
+    text-align: right;
+    padding-right: 12%;
+}
+
+#page-headers {margin-top: 20px;}
+#page-headers .button-header {
+    border-bottom: 2px solid black;
+    
+}
+#page-headers .button-image {
+    margin-top: 20px;
+    text-align: center;
+}
+#page-headers .button-image img {
+    width: 80%;
+    border: thin solid black;}
+
+.sub-name {
+    margin-top: .5ex;
+    font-size: 1.0em;
+}
+
+.writeup p {
+    text-align: left;
+    font-size: .8em;
+    font-weight: normal;
+}
+.writeup .dissertation {
+    font-weight: bold;
+    text-align: center;
+}
+
+.writeup p.dissertation a, .writeup p.dissertation a:visited  {
+    color: blue;
+    text-decoration: underline;
+}
+.introduction {
+    text-align: center;
+    font-size: large;
+    font-weight: normal;
+}
+
+
+#topics img {
+    width: 60%;
+}
+#topics p {
+    font-weight: normal;
+    text-align: left;
+    font-size: .8em;
+}
+#samples {
+    font-weight: normal;
+    text-align: left;
+}
+#samples .title {
+    margin-top: 20px;
+    text-align: center;
+}
+#samples img {
+    width: 100%;
+    padding: 1%;
+    border: thin solid black;
+}
+#samples dd {
+    margin-top: 50px;
+    font-size: .8em;
+    text-align: left;
+    line-height: 2ex;
+}
+#samples dt p {
+    font-weight: normal;
+    text-align: center;
+}
+.subtitle {
+    font-size: 1.1em;
+    font-weight: normal;
+}
+.algo {
+    font-size: 1.0em;
+    font-weight: bold;
+}
+.code pre {
+    text-align: left;
+}
+
+#footer-content {
+    width: 100%;
+    text-align: center;
+}
+#footer-content hr {
+    border: thin solid gray;
+}
+#footer-content ul {
+    padding: 0;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: .7em;
+}
+#footer-content img.self-pic {
+    border: 2px solid black;
+    width: 120px;
+    height: 145px;
+}
+#footer-content ul li.nam {
+    
+}
+#footer-content ul li.return a,#footer-content ul li.return a:visited {
+    color: black;
+    text-decoration: underline;
+}
+/*header.superhead{text-align: right;font-style:italic; font-size:.9em;}*/
