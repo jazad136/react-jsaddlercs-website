@@ -38,22 +38,29 @@ export class ImageCard2 extends Component {
               <Grid columns={2} textAlign='center'>
                 <Grid.Column>
                   <Button basic color="blue">
-                    GitHub
+                    <a href="https://www.github.com/jazad136/">
+                      GitHub</a>
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
                   <Button basic color="blue">
-                    LinkedIn
+                    <a 
+                    href="https://www.linkedin.com/in/jonathan-a-saddler/">
+                      LinkedIn</a>
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
                   <Button basic color="blue">
-                    Twitter
+                    <a 
+                    href="https://www.linkedin.com/in/jonathan-a-saddler/">
+                      Twitter</a>
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
                   <Button basic color="blue" className='rg'>
-                    ResearchGate
+                    <a 
+                    href="https://www.researchgate.net/profile/Jonathan-Saddler">
+                    ResearchGate</a>
                   </Button>
                 </Grid.Column>
 

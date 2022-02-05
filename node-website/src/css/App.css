@@ -20,6 +20,22 @@ body {
 }
 
 .pubsLink h3 a .small {font-size: .9em;}
+
+.topNameplate, .topMenu { 
+  /* margin-top: 1ex; */
+  /* margin-left: 2%; */
+  /* margin-right: 2%; */
+  /* color: white;
+}
+.topMenu .tmItem a {  color: white; }
+.menuBar h3 { 
+  font-size: 1.1em;
+}
+.menuBar, .menuBar .segment{ 
+  /* background-color: black; */
+}
+
+
 /* .focus-content { */
   /* width: 80%;
   margin-left: 10%; */

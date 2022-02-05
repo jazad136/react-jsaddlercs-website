@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react';
 import 'semantic-ui-css/semantic.min.css'
 import './css/App.css';
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
-import {Grid, Segment, Container} from 'semantic-ui-react';
+import {Grid, Segment, Container, List, Button} from 'semantic-ui-react';
 import WebFont from 'webfontloader';
 import Data from './sites/data/Data'
 // import {BrowserRouter as Switch, Route} from 'react-router-dom';
@@ -34,21 +34,44 @@ class App extends Component {
   // for how to deploy using relative links. 
   // remember to update updated link from old static website. 
 
+  MenuBarOld() { 
+    return (
+      <Segment inverted>
+      <Grid stackable columns={2} className='menuBar'>
+        <Grid.Row>
+          <Grid.Column width={6}>
+            <div className='topNameplate'><h3>Jonathan A. Saddler</h3></div>
+          </Grid.Column>
+          <Grid.Column width={10}>
+            <List className='topMenu' horizontal link relaxed size={'large'}>
+              <List.Item className="tmItem">
+                <Button color='blue'><Link to="/">Home</Link></Button>
+              </List.Item>
+              <List.Item className="tmItem"><Link to="/data">Data</Link></List.Item>
+            </List>
+          </Grid.Column>
+        </Grid.Row>  
+      </Grid>
+      </Segment>
+    );
+  }
   MenuBar() { 
     return (
       <Grid stackable columns={2} className="menuBar">
         <Grid.Row>
           <Grid.Column width={6}>
             <Segment color="black" className="a">
-              <h3>Jonathan A. Saddler</h3></Segment>
+              <h3>Jonathan A. Saddler</h3>
+            </Segment>
           </Grid.Column>
           <Grid.Column width={10}>
-            <Grid columns={4}>
-              <Grid.Column>
-                <Segment className="b"><Link to="/">Home</Link></Segment>
+            <Grid columns={4} >
+              <Grid.Column className="topMenu">
+                {/* <Button>Home</Button> */}
+                <Segment color='black'><Link to="/">Home</Link></Segment>
               </Grid.Column>
               <Grid.Column>
-                <Segment className="c1"><Link to="/data">Data</Link></Segment>
+                <Segment color='black'><Link to="/data">Data</Link></Segment>
               </Grid.Column>
               <Grid.Column></Grid.Column>
               <Grid.Column textAlign="center">
@@ -80,7 +103,7 @@ class App extends Component {
                       <NameplateSplash />
                       <div className='missing' style={{fontStyle: 'italic', textAlign: 'center'}}>
                       <h3>Looking for more information? Something missing?</h3>
-                      <div>This react website was released Jan 31, 2022</div>
+                      {/* <div>This react website was released Jan 31, 2022</div> */}
                       <div>You can still access content from the <a href="http://saddlercoms.net/static-html">old website</a> until we get all fixed up here.</div>
                       </div>
                     </Grid.Column>
