@@ -52,7 +52,7 @@ export class ImageCard2 extends Component {
                 <Grid.Column>
                   <Button basic color="blue">
                     <a 
-                    href="https://www.linkedin.com/in/jonathan-a-saddler/">
+                    href="https://twitter.com/Jonasaddler">
                       Twitter</a>
                   </Button>
                 </Grid.Column>
