@@ -51,9 +51,13 @@ export class ImageCard2 extends Component {
                 </Grid.Column>
                 <Grid.Column>
                   <Button basic color="blue">
-                    <a 
-                    href="https://twitter.com/Jonasaddler">
-                      Twitter</a>
+                    {/* <button className="ui twitter button"> */}
+                      {/* <i className="twitter icon"/> */}
+                      {/* <a style={{color: 'white'}} */}
+                      <a
+                      href="https://twitter.com/Jonasaddler">
+                        Twitter</a>
+                    {/* </button> */}
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
