@@ -1,0 +1,139 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Jonathan A. Saddler, Ph. D., East Carolina University</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<link href="../../bootstrap/bootstrap-4.5.3.min.css" type="text/css" rel="stylesheet"/>  
+<link href="../../css/index.css" type="text/css" rel="stylesheet"/>
+
+<script src="../../jquery/jquery-3.5.1.min.js"></script>
+<script>
+  // JQuery 
+  $(document).ready(function(){
+  //$("#show-bar").addClass("invisible");
+  
+  $("#hide-menu").click(function(){
+    $("#show-bar").removeClass("visible");
+    $("#show-bar").addClass("invisible");    
+    });
+  });
+</script>
+</head>
+<body>
+<div id="show-bar" class="visible">
+  <div id="nav-headers">
+    <div><a href="../../index.html">Home</a></div>
+    <div><a href="../../teaching/index.html">Teaching</a></div>
+    <div><a href="../../class/alg2/index.html">Algorithms (2000)</a></div>
+    <div><a href="../../class/ds5/index.html">Discrete Structures (5005)</a></div>
+    <div><a href="../../class/sf1/index.html">Soft. Eng. Founds (1000)</a></div>
+  </div>
+</div>
+<div id="focus-target">
+
+<button id="hide-menu">Click to hide menu</button>
+<h4 style="font-size:.8em">(Refresh to restore)</h4>
+
+<div id="tc-header">
+  <h2>Jonathan A. Saddler, Ph. D.</h2>
+  <h2 class="sub-name">East Carolina University</h2>
+</div>
+
+
+<div id="navs" class="container">
+  <div id="nav-subhead">
+    <h4>SENG 2000</h4>
+    <ul class="nav-links">
+      <li class="list-inline-item"><a href="../i-s-l/index.html">
+	Insertion Sort
+      </a></li>
+      <li class="list-inline-item"><a href="../q-s-lsz/index.html">
+	Quicksort
+      </a></li>
+      <li class="list-inline-item"><a href="../p-mst/index.html">
+	Prim's
+      </a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div id="page-headers">
+  <h2 class="subtitle">Selected Algorithms</h2>
+  <h2 class="algo">Insertion Sort I-S(L)</h2>
+</div>
+<div class="writeup">
+    <p></p>
+    <p>In SENG 2000, we gave demonstrations live of the components of this algorithm in the Java and Python language. We demonstrated our own flavor of the Some elements of memory while maintaining the workmanship of the algorithm.</p>
+</div>
+<div id="samples" class="container">
+  <dl class="row">
+    <dt class="col-sm-6">
+      <h3 class="title">Visualizing the Problem</h3>
+      <div class="sample-img">
+	<img src="../../images/alg-images/SnipAD_ISortHands.png"/>
+      </div>
+    </dt>
+    <dd class="col-sm-6 right">
+      <p>Students were given visualization of the insertion sort solution to sorting. A player holds in their left hand a deck of unsorted &quot;cards&quot; with ordered symbols. In this case, the player's task is simply to move cards one at a time to the right place, searching from the leftmost spot of their left hand, for the card to go next into the right, while&nbsp;maintaining sorted order in the right hand.</p>
+      
+    </dd>
+    <dt class="col-sm-6">
+      <h3 class="title">Assignments</h3>
+      <div class="sample-img">
+	<img src="../../images/alg-images/SnipAD_ISortConfig.png"/>
+      </div>
+    </dt>
+    <dd class="col-sm-6 right">
+      <p>Students were assigned instances of the problem to fill in missing configurations of the algorithm transforming L into a sorted array. Before completing this assignment, we went through numbered exercises, that left parts of the problem of filling "L" half filled, so that students could ask in-class questions and experiment with their intended answer.</p>
+    </dd>
+    <dt class="col-sm-6">
+      <h3 class="title">Runtime Analysis</h3>
+      <div class="sample-img">
+	<img src="../../images/alg-images/SnapAD_ISortRuntime.png"/>
+      </div>
+    </dt>
+    <dd class="col-sm-6 right">
+      <p>The insertion sort algorithm was stepped through in detail to portray its runtime progression given certain inputs.&nbsp;</p>
+      <p>Operations such as copying the current key item to its proper place in the output array can be found in lines 4 - 6 of our interpretation, while operations on selecting each element in the input for this procedure span lines 2 - 8. The output is a sorted arrangement starting from the element that is least in the leftmost spot, with "L" serving as the algorithm's output list by the end.</p>
+    </dd>
+  </dl>
+</div>
+<div class="container code">
+  <hr/>
+  <h3 style="text-align: center">The whole procedure</h3>
+  <h5 style="text-align: center">adapted from Cormen [1]</h5>
+    <div class="row">
+      <div class="col-sm-3"></div><div class="col-sm-6"><pre>
+Begin Algorithm I-S(L):
+1. for j ← 2 ... length(L): 
+2. |    key ← L [ j ] 
+3. |    i ← j – 1 
+4. |    while  i > 0 and L [ i ] > key : 
+5. |    |    store-in L [ i + 1 ] ← L [ i ]
+6. |    |    i ← i – 1
+7. |    endw
+8. |    store in L [ i + 1 ] ← key 
+9. rof
+End.
+       </pre></div><div class="col-sm-3"></div>
+    <hr/>
+    </div>
+</div>
+</div>
+<div class="citation">
+  <p>[1] Cormen, T., Leisersen C., Rivest R., and Stein C. <em>Introduction to Algorithms</em>. 3rd. ed. (2009) MIT Press.</p>
+</div>
+<div id="footer-content">
+  <hr/>
+  <div class="footer-pic">
+    <a href="http://www.cs.ecu.edu/saddler/index.html"><img alt="(Picture of Jonathan A. Saddler, Ph. D.)" class="self-pic" src="http://www.cs.ecu.edu/saddler/images/index-images/self_pic_F2020.jpg"/></a>
+  </div>
+  <ul>
+    <li class="nam">Jonathan A. Saddler, Ph. D., East Carolina University</li>
+    <li class="bdng">Science &amp; Technology Building, Rm. C117</li>
+    <li class="eml">email: saddlerj20@ecu(dot)edu</li>
+    <li class="return"><a href="http://www.cs.ecu.edu/saddler/index.html">Return to Home</a></li>
+  </ul>
+</div>
+</body>
+</html>

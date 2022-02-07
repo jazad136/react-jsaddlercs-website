@@ -1,0 +1,79 @@
+body { font-family: "Verdana", "Georgia", "Times Roman", times, serif;
+        /*font-family: "Times Roman", times, serif;*/
+	/*font-family: "Arial", "Helvetica", sans-serif;*/
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+} 
+h1, h2, h3, h4{ 
+	margin: 10px 0 10px 0;
+}
+h2 { font-size: 1.1em; }
+li { 
+text-align: left;
+}
+div#text-content { 
+	margin-left: 20%; /*20%*/
+	margin-top: 5ex;  
+	width:60%;
+}
+div#text-content #tc-header {
+	width: 100%;
+	clear: both;	
+	margin: 20px 0 20px 0;
+	font-size: .8em;
+}
+div#text-content #tc-header div {
+	font-weight: normal; 
+	margin: 0 10% 0 0;	
+}
+div#text-content #tc-header div:nth-child(1){
+	float: left;
+}
+div#text-content #tc-header div:nth-child(2){
+	float: left;
+	margin-left: 11%;
+}
+
+div#main-content #topics-header {
+	width: 100%;
+	clear: both;	
+	margin: 20px 0 20px 0;
+	font-size: 1.1em;
+}
+#topics { 
+	width:80%;
+	font-weight: normal;
+}
+#topics ol li{ 
+	list-style-type: upper-roman;	
+}
+.topic p { 
+	padding-left: 3em;
+	font-size: .8em;
+}
+#topics ul.subtopic li {
+	list-style-type: circle;
+}
+ul.subtopic h3 { font-size:.8em;}
+
+#topics ol.multc-question li { 
+	margin-left: 5em;
+	list-style-type: lower-alpha;
+	font-size: .8em;
+}
+
+#topics .input-list table {
+	width: 60%;
+}
+
+
+#topics .input-list table td{
+	width: 3em;
+	text-align: left;
+} 
+#topics .input-list table.subarray td {
+	width:20%;
+}
+#topics table tr.list-label { font-size: .8em; }
+

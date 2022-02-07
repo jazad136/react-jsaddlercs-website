@@ -1,0 +1,145 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Jonathan A. Saddler, Ph. D., East Carolina University</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<link href="../../bootstrap/bootstrap-4.5.3.min.css" type="text/css" rel="stylesheet"/>  
+<link href="../../css/index.css" type="text/css" rel="stylesheet"/>
+
+<script src="../../jquery/jquery-3.5.1.min.js"></script>
+<script>
+  // JQuery 
+  $(document).ready(function(){
+  //$("#show-bar").addClass("invisible");
+  
+  $("#hide-menu").click(function(){
+    $("#show-bar").removeClass("visible");
+    $("#show-bar").addClass("invisible");    
+    });
+  });
+</script>
+</head>
+<body>
+<div id="show-bar" class="visible">
+  <div id="nav-headers">
+    <div><a href="../../index.html">Home</a></div>
+    <div><a href="../../teaching/index.html">Teaching</a></div>
+    <div><a href="../../class/alg2/index.html">Algorithms (2000)</a></div>
+    <div><a href="../../class/ds5/index.html">Discrete Structures (5005)</a></div>
+    <div><a href="../../class/sf1/index.html">Soft. Eng. Founds (1000)</a></div>
+  </div>
+</div>
+<div id="focus-target">
+  
+<div id="tc-header">
+  <h2>Jonathan A. Saddler, Ph. D.</h2>
+  <h2 class="sub-name">East Carolina University</h2>
+</div>
+
+<div id="navs">
+  <div id="nav-subhead">
+  <h4>SENG 2000</h4>
+  <ul class="nav-links">
+    <li class="list-inline-item"><a href="../i-s-l/index.html">
+      Insertion Sort
+    </a></li>
+    <li class="list-inline-item"><a href="../q-s-lsz/index.html">
+      Quicksort
+    </a></li>
+    <li class="list-inline-item"><a href="../p-mst/index.html">
+      Prim's
+    </a></li>
+  </ul>
+  </div>
+</div>
+<div id="page-headers">
+  <h2 class="subtitle">Selected Algorithms</h2>
+  <h2 class="algo">Q-S(L, s, z)</h2>
+</div>
+<div class="writeup">
+    <p></p>
+    <p>In SENG 2000, we purposefully renamed some elements of memory while maintaining the workmanship of the algorithm, and I demonstrated working code following in Java to help students really understand the flow of its two major component subfunctions, &quot;renamed&quot; P-L(L,s,z) for &quot;Partition List&quot; and Q-S(L,s,z) which each do two different jobs. We take the definition from CLRS[1] and mix it up quite a bit!</p>
+</div>
+<div id="samples" class="container">
+    <dl class="row">
+      <dt class="col-sm-6">
+	<h3 class="title">Grand Example</h3>
+	<div class="sample-img">
+	  <img src="../../images/alg-images/SnapAD_QSInputs.png"/>
+	</div>
+      </dt>
+      <dd class="col-sm-6 right">
+	<p>Problems were defined in terms of our indexed lists.</p>
+	<p>We had one grand example given in class of a negative/positive input, that had an easy-to-grasp output of sorted integers from -5 to +5.</p>
+      </dd>
+      <dt class="col-sm-6">
+	<h3 class="title">Partition</h3>
+	<div class="sample-img">
+	  <img src="../../images/alg-images/SnapAD_QSPartition.png"/>
+	</div>
+      </dt>
+      <dd class="col-sm-6 right">
+	
+	<p>Students learned how the main memory elements used in partitioning point to spots in the &quot;in-place&quot; input that help move units left and right of the key variable of P-S, the <strong><em>partition element</em></strong>.</p>
+	<p>In our version of Quicksort, the partition variable is &quot;returned&quot; from the subprocedure to help the Quicksort operation complete the call in its entirety.</p>
+      </dd>
+      <dt class="col-sm-6">
+	<h3 class="title">Quicksort Completes</h3>
+	<div class="sample-img">
+	  <img src="../../images/alg-images/SnapAD_QSPopOut.png"/>
+	</div>
+      </dt>
+      <dd class="col-sm-6 right">
+	<p>The partitioning procedure P-L(L,s,z) is used to section off parts of the input less and greater than a certain element, return the partition element and, leave the input array in a certain state. The Q-S procedure can then use the new state of L to determine how to proceed. When the partition element returned happens to be the &quot;median&quot; of L, Quicksort can run optimally</p>
+	<p>Students were shown through demonstration Java code how to use the two &quot;outputs&quot; (the sorted array and returned partition element) of P-L to learn how Quicksort may continue to completely sort through an array if allowed to continuously recursively divide and manage elements of the input.</p>
+      </dd>
+    </dl>
+  </div>
+
+
+<div class="container code">
+  <hr/>
+  <h3 style="text-align: center">The whole procedure</h3>
+  <h5 style="text-align: center">adapted from Cormen [1]</h5>
+  <div class="row">
+    <div class="col-sm-6"><pre>
+Begin Q-S(L, s, z) 
+1. if s &lt; z: 
+2. |	q ← P-L	( L , s ,      z ) 
+3. | 	Q-S     ( L , s ,      q – 1 ) 
+4. | 	Q-S     ( L , q + 1,   z )  
+End.
+    </pre></div>
+  <div class="col-sm-6"><pre>
+Begin P-L(L, s, z):
+1. i ← s – 1 
+2. for j ← s … z – 1 
+3. |    if L[ j ] &lt; L[ z ] 
+4. |    | 	i ← i + 1
+5. |    |	swap-in( A, i, j )
+6. rof
+7. swap-in( A, i + 1, z )
+8. return i + 1
+End.</pre>
+       </div>
+    </div>
+    <hr/>
+    
+  </div>
+</div>
+<div class="citation">
+  <p>[1] Cormen, T., Leisersen C., Rivest R., and Stein C. <em>Introduction to Algorithms</em>. 3rd. ed. (2009) MIT Press.</p>
+</div>
+<div id="footer-content">
+  <hr/>
+  <div class="footer-pic">
+    <a href="http://www.cs.ecu.edu/saddler/index.html"><img alt="(Picture of Jonathan A. Saddler, Ph. D.)" class="self-pic" src="http://www.cs.ecu.edu/saddler/images/index-images/self_pic_F2020.jpg"/></a>
+  </div>
+  <ul>
+    <li class="nam">Jonathan A. Saddler, Ph. D., East Carolina University</li>
+    <li class="bdng">Science &amp; Technology Building, Rm. C117</li>
+    <li class="eml">email: saddlerj20@ecu(dot)edu</li>
+    <li class="return"><a href="http://www.cs.ecu.edu/saddler/index.html">Return to Home</a></li>
+  </ul>
+</div>
+</body>
+</html>
