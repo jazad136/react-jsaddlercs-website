@@ -1,15 +1,15 @@
 import React, {Component, Fragment} from 'react';
 import 'semantic-ui-css/semantic.min.css'
 import './css/App.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import {Grid, Segment, Container} from 'semantic-ui-react';
 import WebFont from 'webfontloader';
 import Data from './sites/data/Data'
 // import {BrowserRouter as Switch, Route} from 'react-router-dom';
 // images and navbars - temporarily disabled. 
 
-//import Navbar from './Navbar'
-import MenuBar from './components/MenuBar';
+// import Navbar from './Navbar'
+// import MenuBar from './components/MenuBar';
 import Conferences from './components/Conferences'
 import Workshops from './components/Workshops';
 import ImageCard from './components/ImageCard2';
@@ -35,13 +35,42 @@ class App extends Component {
   // for how to deploy using relative links. 
   // remember to update updated link from old static website. 
 
-
+  MenuBar() { 
+    return (
+      <Grid stackable columns={2} className="menuBar">
+        <Grid.Row>
+          <Grid.Column width={6}>
+            <Segment color="black" className="a">
+              <h3>Jonathan A. Saddler</h3>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column width={10}>
+            <Grid columns={4} >
+              <Grid.Column className="topMenu">
+                {/* <Button>Home</Button> */}
+                <Segment color='black'><Link to="/">Home</Link></Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment color='black'><Link to="/data">Data</Link></Segment>
+              </Grid.Column>
+              <Grid.Column></Grid.Column>
+              <Grid.Column textAlign="center">
+                <Segment basic className="c4 pubsLink">
+                  <h3><a href="#pubs"><span className="small">Show me the</span><br/>Pubs!</a></h3>
+                </Segment>
+              </Grid.Column>
+            </Grid>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    );
+  }
   
   render() { 
     return (
       <Router basename={'/react'}>
         <div className="App">
-          <MenuBar/>
+        {this.MenuBar()}
           <Container className="focus-content">
             <Grid stackable columns={2}>
               <Switch>
