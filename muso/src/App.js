@@ -7,8 +7,8 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
     google: {
-        families: ['Oswald: 400,700',
-                   'Raleway: 400,700']
+        families: ['Oswald: 400,400italic,700',
+                   'Raleway: 400,400italic,700']
     }
 })
 // https://www.better.dev/how-to-add-fonts-to-a-react-project
@@ -30,13 +30,25 @@ export class App extends Component {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column width={3}><Segment className="a2">a2</Segment></Grid.Column>
+            <Grid.Column width={3}></Grid.Column>
+            <Grid.Column width={10}><hr/></Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column width={3}>
+            {/* <Segment basic className="a2">a2</Segment> */}
+            </Grid.Column>
             <Grid.Column width={10}>
               <LineFieldSet lineNum={2} classStub='c'/>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column width={3}><Segment className="a3">a3</Segment></Grid.Column>
+            <Grid.Column width={3}></Grid.Column>
+            <Grid.Column width={10}><hr/></Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column width={3}>
+              {/* <Segment basic className="a3">a3</Segment> */}
+            </Grid.Column>
             <Grid.Column width={10}>
               <LineFieldSet lineNum={3} classStub='d'/>
             </Grid.Column>
