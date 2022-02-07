@@ -1,0 +1,22 @@
+﻿Key,Goal,Category,Source,# Cases in Test Suite
+1,Libre Office Format Text M,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,3
+2,Libre Office Format Text MK,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,24
+3,Libre Office Format Text MKT,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,81
+4,Libre Office Insert Hyperlink M,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,2
+5,Libre Office Insert Hyperlink MK,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,81
+6,Libre Office Insert Hyperlink MKT,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,18
+7,Libre Office Absolute Value M,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,4
+8,Libre Office Absolute Value MK,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,32
+9,Libre Office Absolute Value MKT,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,72
+10,Libre Office Insert Table M,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,3
+11,Libre Office Insert Table MK,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,12
+12,Libre Office Insert Table MKT,SDO,http://cse.unl.edu/~myra/artifacts/HPRT-2013,36
+13,TerpWord Bold Center (TWBC),SDO,*,8
+14,DrJava Search Options (DJSO),SFG,*,64
+15,JEdit Comment Indent (JECI),SDO,*,16
+16,DrJava Compile File (DJCF),SDO,http://stackoverflow.com/questions/26821167/how-to-determine-what-commands-drjava-is-executing,4
+17,JEdit Commented Text TC (JECTTC),SAG,http://stackoverflow.com/questions/27180136/highlight-comments-background-in-jedit,26
+18,JEdit Commented Text BC (JECTBC),SAG,http://stackoverflow.com/questions/27180136/highlight-comments-background-in-jedit,26
+19,JEdit Commented Text FULL (JECTF),SAG,http://stackoverflow.com/questions/27180136/highlight-comments-background-in-jedit,200
+20,JEdit Four Paragraphs N (JEFPN),SFG,http://stackoverflow.com/questions/33421810/finding-the-regular-expressions-search-in-jedit,114
+21,JEdit Four Paragraphs MD (JEFPMD),SFG,http://stackoverflow.com/questions/33421810/finding-the-regular-expressions-search-in-jedit,36

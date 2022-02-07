@@ -1,11 +1,13 @@
 import React from 'react';
 
-export const SaddlerEFSAT4 = () => {
+export const saddlerEFSAT4 = () => {
   return (
       <table>
+        <thead>
+          <tr>	<th>	Task	</th>	<th>	Application	</th>	<th>	Variant	</th>	<th>	Rules HPRT	</th>	<th>	Rules EFS	</th>	<th>	EFS Rule Types	</th>	<th>		</th>	<th>		</th>	<th>		</th>	<th>		</th>	<th>	Widgets	</th>	</tr>
+          <tr>	<th>		</th>	<th>		</th>	<th>		</th>	<th>		</th>	<th>		</th>	<th>	REQUIRE	</th>	<th>	EXCLUDE	</th>	<th>	ORDER	</th>	<th>	REPEAT	</th>	<th>	ATOMIC	</th>	<th>	Count	</th>	</tr>
+        </thead>
         <tbody>																											
-        <tr>	<th>	Task	</th>	<th>	Application	</th>	<th>	Variant	</th>	<th>	Rules HPRT	</th>	<th>	Rules EFS	</th>	<th>	EFS Rule Types	</th>	<th>		</th>	<th>		</th>	<th>		</th>	<th>		</th>	<th>	Widgets	</th>	</tr>
-        <tr>	<th>		</th>	<th>		</th>	<th>		</th>	<th>		</th>	<th>		</th>	<th>	REQUIRE	</th>	<th>	EXCLUDE	</th>	<th>	ORDER	</th>	<th>	REPEAT	</th>	<th>	ATOMIC	</th>	<th>	Count	</th>	</tr>
         <tr>	<td>	Format Text	</td>	<td>	TerpWord	</td>	<td>	M	</td>	<td>	4	</td>	<td>	7	</td>	<td>	4	</td>	<td>	-	</td>	<td>	2	</td>	<td>	-	</td>	<td>	-	</td>	<td>	9	</td>	</tr>
         <tr>	<td>		</td>	<td>		</td>	<td>	MK	</td>	<td>	7	</td>	<td>	9	</td>	<td>	4	</td>	<td>	2	</td>	<td>	2	</td>	<td>	1	</td>	<td>	-	</td>	<td>	12	</td>	</tr>
         <tr>	<td>		</td>	<td>		</td>	<td>	MKT	</td>	<td>	7	</td>	<td>	10	</td>	<td>	4	</td>	<td>	3	</td>	<td>	2	</td>	<td>	1	</td>	<td>	-	</td>	<td>	15	</td>	</tr>
@@ -28,8 +30,9 @@ export const SaddlerEFSAT4 = () => {
         <tr>	<td>	Four Paragraphs	</td>	<td>	JEdit	</td>	<td>	W	</td>	<td>	NA	</td>	<td>	12	</td>	<td>	4	</td>	<td>	3	</td>	<td>	1	</td>	<td>	-	</td>	<td>	4	</td>	<td>	12	</td>	</tr>
         <tr>	<td>	Four Paragraphs	</td>	<td>	JEdit	</td>	<td>	MD	</td>	<td>	NA	</td>	<td>	16	</td>	<td>	6	</td>	<td>	3	</td>	<td>	2	</td>	<td>	1	</td>	<td>	4	</td>	<td>	12	</td>	</tr>
 
-</tbody>																																		
-
+        </tbody>																																		
       </table>
   )
 };
+
+export default saddlerEFSAT4;

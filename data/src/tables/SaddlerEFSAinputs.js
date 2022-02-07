@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const SaddlerEFSAinputs = () => {
+export const saddlerEFSAinputs = () => {
   return (
     <table>
       <caption>Input Files</caption>
@@ -221,3 +221,5 @@ export const SaddlerEFSAinputs = () => {
     </table>
   );
 };
+
+export default saddlerEFSAinputs;
