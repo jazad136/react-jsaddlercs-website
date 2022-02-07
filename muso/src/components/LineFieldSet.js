@@ -40,7 +40,7 @@ export class LineFieldSet extends Component {
             </div>
           </Grid.Column>
           <Grid.Column width={2}>
-            <div basic className={`${classStub}2-2`}>
+            <div className={`${classStub}2-2`}>
               {classStub}2-2
             </div>
           </Grid.Column>

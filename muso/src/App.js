@@ -11,12 +11,41 @@ WebFont.load({
                    'Raleway: 400,400italic,700']
     }
 })
+
+
 // https://www.better.dev/how-to-add-fonts-to-a-react-project
 export class App extends Component {
+  midiAcc = (e) => { 
+    navigator.requestMIDIAccess()
+    .then(function(access) {
+  
+       // Get lists of available MIDI controllers
+       const inputs = access.inputs.values();
+       const outputs = access.outputs.values();
+       console.log('Inputs')
+       
+       while(inputs.hasNext()) { 
+        console.log(inputs.next());
+       }
+       
+       console.log(inputs);
+       console.log('Outputs')
+       console.log(outputs);
+       access.onstatechange = function(e) {
+         // Print information about the (dis)connected MIDI controller
+         console.log(e.port.name, e.port.manufacturer, e.port.state);
+       };
+    });
+  }
   render() {
     return (
       <div className="focus-content">
         This is where content goes. 
+        <div>
+          <input type="button"
+          value="MIDITest"
+          onClick={this.midiAcc} />
+        </div>
         <form>
         <Grid columns={2}>
           <Grid.Row>
