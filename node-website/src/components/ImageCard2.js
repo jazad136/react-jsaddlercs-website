@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Image, Button, Segment} from 'semantic-ui-react';
+import { Grid, Image, Button, Segment, Icon} from 'semantic-ui-react';
 import selfPic from "../images/homepage-img/SelfPicLin_cr.jpg"
 import cvPdf from '../images/homepage-img/JSaddler_CV_Web.pdf';
 import resumePdf from '../images/homepage-img/JS_Resume_Web.pdf';
@@ -37,31 +37,34 @@ export class ImageCard2 extends Component {
               </Grid>
               <Grid columns={2} textAlign='center'>
                 <Grid.Column>
-                  <Button basic color="blue">
-                    <a href="https://www.github.com/jazad136/">
+                  <Button color="facebook">
+                    <Icon color="github" name="github"/>
+                    <a className="iconLink" href="https://www.github.com/jazad136/">
                       GitHub</a>
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
-                  <Button basic color="blue">
-                    <a 
+                  <Button color="linkedin">
+                    <Icon color='white' name='linkedin'/>
+                    <a className="iconLink"
                     href="https://www.linkedin.com/in/jonathan-a-saddler/">
                       LinkedIn</a>
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
-                  <Button basic color="blue">
                     {/* <button className="ui twitter button"> */}
                       {/* <i className="twitter icon"/> */}
                       {/* <a style={{color: 'white'}} */}
-                      <a
+                  <Button basic color="blue">
+                    <Icon color="blue" name="twitter"/>
+                      <a 
                       href="https://twitter.com/Jonasaddler">
                         Twitter</a>
                     {/* </button> */}
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
-                  <Button basic color="blue" className='rg'>
+                  <Button basic color='blue' className='rg'>
                     <a 
                     href="https://www.researchgate.net/profile/Jonathan-Saddler">
                     ResearchGate</a>
