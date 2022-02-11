@@ -1,11 +1,11 @@
 import React,{Fragment} from 'react';
 import '../css/proceeding-block.css'
 import efstool_pdf from "../images/paper-img/Saddler_EFSTool_preprint.pdf";
-import efstool_tab2 from '../tables/csv/SaddlerEFSAinputs'
-
+import efstool_tab2 from '../tables/csv/SaddlerEFSGtable2'
+import efstool_tab4 from '../tables/csv/SaddlerEFSGtable4'
 import ConferenceD from './ConferenceD'
 
-export const ConferencesD = () => {
+export const ConferencesD2 = () => {
   return (
     <Fragment>
         <h3>Conference Proceedings</h3>
@@ -36,7 +36,14 @@ export const ConferencesD = () => {
             of Software Engineering (ESEC/FSE)</span>&nbsp;
             , Nov. 2018. [Online]
           </ConferenceD>
-          <ConferenceD paperDoi="10.1109/ASE.2017.8115711" preprint={efstool_pdf} csvTables={[efstool_tab2]}>
+          <ConferenceD paperDoi="10.1109/ASE.2017.8115711" 
+            preprint={efstool_pdf} 
+            csvTables={[
+                {'table_name': 'Table 2',
+                'import_name': efstool_tab2},
+                {'table_name': 'Table 4',
+                'import_name': efstool_tab4}
+            ]}>
             <span class="me">Saddler, J. A.</span>, Cohen, M. B. &quot;EventFlowSlicer: A tool for
               generating realistic goal-driven GUI tests,&quot; 
               in <span className="paper">Proceedings of the 32nd IEEE/ACM 
@@ -85,4 +92,4 @@ export const ConferencesD = () => {
   )
 };
 
-export default ConferencesD;
+export default ConferencesD2;

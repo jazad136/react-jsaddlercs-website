@@ -29,13 +29,31 @@ export const ConferenceD = (props) => {
       return ""
     }
   }
+  const getTablesLinks = (tables) => {
+    if(tables.length == 0) 
+    { 
+      return null; 
+    } 
+    return (<List >
+      {tables.map(table => (
+        <List.Item as='li'>
+          <a href={table.importName}>
+            {table.displayName}
+          </a>
+        </List.Item>
+      ))}
+    </List>)
+      
+    
+  }
 
   return (
     <List.Item>
       <Segment>
         {props.children}<br/>
         {getPreprintLink(props.preprint)}&nbsp;
-        {getAvailableLink(props.paperDoi)}
+        {getAvailableLink(props.paperDoi)}&nbsp;
+        {getTablesLinks(props.csvTables)}
       </Segment>
     </List.Item>
   );

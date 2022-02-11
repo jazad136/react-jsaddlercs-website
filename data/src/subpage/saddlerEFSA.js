@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class saddlerEFSA extends Component {
+export class SaddlerEFSA extends Component {
   render() {
     return (
         <div>
@@ -24,7 +24,7 @@ export class saddlerEFSA extends Component {
   }
 }
 
-export default saddlerEFSA;
+export default SaddlerEFSA;
 // <!doctype html>
 // <html>
 
