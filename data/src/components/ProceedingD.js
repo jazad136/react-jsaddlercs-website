@@ -1,9 +1,22 @@
 import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
 import {List, Segment, Icon} from 'semantic-ui-react'
-export const ConferenceD = (props) => {
+export const ProceedingD = (props) => {
   
   
+  // const getAvailableLink = (paperDoi) => { 
+  //   if(paperDoi) { 
+  //     const fullLink = `https://doi.org/${paperDoi}`
+  //     return (
+  //       <Fragment>
+  //         Link to paper: <a href={fullLink}><Icon name="file alternate"/></a>
+  //       </Fragment>
+  //     );
+  //   }
+  //   else {
+  //     return '';
+  //   }
+  // }
   const getAvailableLink = (paperDoi) => { 
     if(paperDoi) { 
       const fullLink = `https://doi.org/${paperDoi}`
@@ -30,21 +43,24 @@ export const ConferenceD = (props) => {
     }
   }
   const getTablesLinks = (tables) => {
-    if(tables.length == 0) 
-    { 
+    if(tables === undefined || tables.length === 0) { 
       return null; 
     } 
-    return (<List >
-      {tables.map(table => (
-        <List.Item as='li'>
-          <a href={table.importName}>
-            {table.displayName}
-          </a>
+    return (
+    <ul className='paper-tables'>
+      {tables.map((table, index) => (
+        <List.Item as='li' key={index}>
+          <div>
+            <Icon name='table' size='small'/>
+          </div>
+          <div>
+            <a href={table.importName}>
+              {table.displayName}
+            </a>
+          </div>
         </List.Item>
       ))}
-    </List>)
-      
-    
+    </ul>) 
   }
 
   return (
@@ -58,9 +74,10 @@ export const ConferenceD = (props) => {
     </List.Item>
   );
 };
-ConferenceD.propTypes = {
+ProceedingD.propTypes = {
   preprint: PropTypes.string,
-  paperDoi: PropTypes.string
+  paperDoi: PropTypes.string,
+  cavTables: PropTypes.array
 }
-export default ConferenceD;
+export default ProceedingD;
 
