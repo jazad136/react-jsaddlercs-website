@@ -1,3 +1,7 @@
+dt { 
+    font-size: 1.4em;
+    text-align: center;
+}
 .me { 
     font-weight: bold;
 }
@@ -7,11 +11,6 @@
 .website { 
     font-size: .9em;
 }
-.paper-tables {
-}
-/* .paper-tables li { 
-    float: left;
-} */
 .paper-tables div{
     float: left;
     margin-left: 1em;
