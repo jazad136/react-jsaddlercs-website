@@ -1,9 +1,9 @@
 import React,{Fragment} from 'react';
-import '../../css/proceeding-block.css'
-import efstool_pdf from "../../images/paper-img/Saddler_EFSTool_preprint.pdf";
+import '../css/proceeding-block.css'
+import efstool_pdf from "../images/paper-img/Saddler_EFSTool_preprint.pdf";
 import ProceedingD from './ProceedingD'
-import efstool_tab2 from '../../tablescsv/SaddlerEFSGtable2.csv'
-import efstool_tab4 from '../../tablescsv/SaddlerEFSGtable4.csv'
+import efstool_tab2 from '../tables/csv/SaddlerEFSGtable2.csv'
+import efstool_tab4 from '../tables/csv/SaddlerEFSGtable4.csv'
 export const ProceedingsD = () => {
   return (
     <Fragment>

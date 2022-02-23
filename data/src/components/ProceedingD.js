@@ -3,6 +3,20 @@ import PropTypes from 'prop-types'
 import {List, Segment, Icon} from 'semantic-ui-react'
 export const ProceedingD = (props) => {
   
+  
+  // const getAvailableLink = (paperDoi) => { 
+  //   if(paperDoi) { 
+  //     const fullLink = `https://doi.org/${paperDoi}`
+  //     return (
+  //       <Fragment>
+  //         Link to paper: <a href={fullLink}><Icon name="file alternate"/></a>
+  //       </Fragment>
+  //     );
+  //   }
+  //   else {
+  //     return '';
+  //   }
+  // }
   const getAvailableLink = (paperDoi) => { 
     if(paperDoi) { 
       const fullLink = `https://doi.org/${paperDoi}`
@@ -33,22 +47,20 @@ export const ProceedingD = (props) => {
       return null; 
     } 
     return (
-      <Fragment>
-      <ul className='paper-tables'>
-        {tables.map((table, index) => (
-          <List.Item as='li' key={index}>
-            <div>
-              <Icon name='table' size='small'/>
-            </div>
-            <div>
-              <a href={table.importName}>
-                {table.displayName}
-              </a>
-            </div>
-          </List.Item>
-        ))}
-      </ul>
-    </Fragment>) 
+    <ul className='paper-tables'>
+      {tables.map((table, index) => (
+        <List.Item as='li' key={index}>
+          <div>
+            <Icon name='table' size='small'/>
+          </div>
+          <div>
+            <a href={table.importName}>
+              {table.displayName}
+            </a>
+          </div>
+        </List.Item>
+      ))}
+    </ul>) 
   }
 
   return (
