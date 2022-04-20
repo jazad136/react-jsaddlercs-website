@@ -1,9 +1,7 @@
 import React from "react";
 
-export const VTView = (props) => {
+export const VTView2 = (props) => {
   const { id, name, bedInfo, nights, stayStart } = props.hotel;
-
-  return (
     // hotel contains one hotel.
     // hotel.id
     // hotel.name
@@ -16,22 +14,24 @@ export const VTView = (props) => {
     // hotel.shortName
     // hotel.address
     // hotel.topAmenities
-    <div className="vt-view">
-      <div className="ui grid two wide">
-        <div className="ui column">
-          <div className="a">
-            <div>Name</div>
-            <div>Address</div>
-            <div>Link</div>
-          </div>
-        </div>
-        <div className="ui column">
-          <div className="b">
-            <div>Chain</div>
-          </div>
-        </div>
-      </div>
-    </div>
+  return (
+    <div>VTView2</div>
+    // <div className="vt-view">
+    //   <div className="ui grid two wide">
+    //     <div className="ui column">
+    //       <div className="a">
+    //         <div>Name</div>
+    //         <div>Address</div>
+    //         <div>Link</div>
+    //       </div>
+    //     </div>
+    //     <div className="ui column">
+    //       <div className="b">
+    //         <div>Chain</div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
-export default VTView;
+export default VTView2;
