@@ -1,7 +1,6 @@
 import React from "react";
 
 export const VTView2 = (props) => {
-  const { id, name, bedInfo, nights, stayStart } = props.hotel;
     // hotel contains one hotel.
     // hotel.id
     // hotel.name
