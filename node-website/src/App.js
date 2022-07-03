@@ -84,46 +84,11 @@ class App extends Component {
                       <NameplateSplash />
                       <div className='missing' style={{fontStyle: 'italic', textAlign: 'center'}}>
                       <h3>Looking for more information? Something missing?</h3>
-                      {/* <div>This react website was released Jan 31, 2022</div> */}
                       <div>You can still access content from the <a href="http://saddlercoms.net/static-html">old website</a> until we get all fixed up here.</div>
                       </div>
                     </Grid.Column>
                   </Grid.Row>
-                  {/* grid rows k l m*/}
-                {/* <Grid.Row>
-                  <Grid.Column width={6}>
-                    <Segment className="k">
-                      <Segment className="k1">Most Recent Appointment</Segment>
-                      <div className="k2">Teaching Asst.</div>
-                      <div className="k3">Professor of</div>
-                      <div className="k4">Computer Science</div>
-                      East Carolina University
-                    </Segment>
-                  </Grid.Column>
-                  <Grid.Column width={10}>
-                    <Grid columns="2">
-                      <Grid.Column><Segment className="L1">L1</Segment></Grid.Column>
-                      <Grid.Column><Segment className="L2">L2</Segment></Grid.Column>
-                    </Grid>
-                  </Grid.Column>
-                </Grid.Row> */}
-                {/* grid rows n o p*/}
-                {/* <Grid.Row columns={1}>
-                  <Grid.Column>
-                    <Segment className="m">m</Segment>
-                  </Grid.Column>
-                </Grid.Row>
-                <Grid.Row columns={3}>
-                  <Grid.Column>
-                    <Segment className="n">n</Segment>
-                  </Grid.Column>
-                  <Grid.Column>
-                    <Segment className="o">o</Segment>
-                  </Grid.Column>
-                  <Grid.Column>
-                    <Segment className="p">p</Segment>
-                  </Grid.Column>
-                </Grid.Row> */}
+
                 {/* row q Interests */}
                 <Grid.Row columns={1}>
                   <Grid.Column>
