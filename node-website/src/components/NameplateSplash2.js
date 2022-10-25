@@ -12,6 +12,9 @@ export class NameplateSplash2 extends Component {
               <h1>Jonathan A. Saddler, Ph. D.</h1>
             </Segment>
           </Grid.Column>
+          <Grid.Column>
+            <Segment>abc</Segment>
+          </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column>
