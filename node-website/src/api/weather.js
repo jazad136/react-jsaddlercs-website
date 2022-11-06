@@ -1,8 +1,7 @@
 import axios from 'axios'
-//const KEY = 'AIzaSyC6_nGICnzcaiUfNkWUAEc3TVQz2ILDBmY'
 
 export default axios.create({
-    baseURL: 'https://localhost:8080/weathercalls'
+    baseURL: 'http://localhost:8080/'
     // ,
     // params: {
     //     part: 'snippet',
