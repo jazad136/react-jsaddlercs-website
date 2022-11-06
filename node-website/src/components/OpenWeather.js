@@ -1,30 +1,33 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import weather from '../api/weather.js'
-
+import WeatherInclude from './weather/WeatherInclude'
 
 const OpenWeather = () => {
-    const getWeather = async () => { 
-        const response = await weather.get('/')
-        setTemp(response.temp)
-        setFeelsLike(response.feelsLike)
-    }
-    const [temp, setTemp] = useState(1)
-    const [feelsLike, setFeelsLike] = useState(2)
     const [dateTime, setDateTime] = useState('')
+    const [temp, setTemp] = useState(0.0)
+    const [feelsLike, setFeelsLike] = useState(0.0)
     
-    // useEffect(() => {
-    //     getWeather()
-    // }, [])
+    const getWeather = async () => { 
+        const response = await weather.get();
+        console.log(response)
+        setTemp(response.data.temp)
+        setFeelsLike(response.data.feelsLike)
+        setDateTime(response.data.time)
+    }
+    
+    useEffect(() => {
+        getWeather()
+    }, [])
   return (
     <div>
-        <div>
-            <h2>Weather in</h2>
-            <h2>Flint, Michigan</h2> 
+        <WeatherInclude/>
+        {/* <div>
+            <h3>Weather Forecast, Flint, Michigan</h3> 
         </div>
         <div>
             <h3>Temp: {temp}</h3>
             <h3>Feels Like: {feelsLike}</h3>
-        </div>
+        </div> */}
     </div>
   )
 }
