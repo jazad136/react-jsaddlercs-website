@@ -38,14 +38,14 @@ export class ImageCard2 extends Component {
               <Grid columns={2} textAlign='center'>
                 <Grid.Column>
                   <Button color="facebook">
-                    <Icon color="github" name="github"/>
+                    <Icon color='teal' name="github"/>
                     <a className="iconLink" href="https://www.github.com/jazad136/">
                       GitHub</a>
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
                   <Button color="linkedin">
-                    <Icon color='white' name='linkedin'/>
+                    <Icon color='teal' name='linkedin'/>
                     <a className="iconLink"
                     href="https://www.linkedin.com/in/jonathan-a-saddler/">
                       LinkedIn</a>
