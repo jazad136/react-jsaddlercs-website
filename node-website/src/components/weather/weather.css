@@ -1,0 +1,21 @@
+.wViewer { 
+    font-size: 16px;
+}
+.wViewer h2 { 
+    font-size: .9em;
+}
+.wViewer h3 { 
+    font-size: .7em;
+}
+.sunPic {
+    height: 50px;
+    width: 50px;
+}
+
+.subtitle h2{ 
+    margin: 0;
+    text-align: center;
+}
+.subtitle h3{ 
+    margin: 0;
+}
