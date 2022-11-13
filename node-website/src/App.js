@@ -82,11 +82,10 @@ class App extends Component {
                     </Grid.Column>
                     <Grid.Column width={10}>
                       <NameplateSplash />
-                      <div className='missing' style={{fontStyle: 'italic', textAlign: 'center'}}>
+                      {/* <div className='missing' style={{fontStyle: 'italic', textAlign: 'center'}}>
                       <h3>Looking for more information? Something missing?</h3>
-                      {/* <div>This react website was released Jan 31, 2022</div> */}
                       <div>You can still access content from the <a href="http://saddlercoms.net/static-html">old website</a> until we get all fixed up here.</div>
-                      </div>
+                      </div> */}
                     </Grid.Column>
                   </Grid.Row>
                   {/* grid rows k l m*/}

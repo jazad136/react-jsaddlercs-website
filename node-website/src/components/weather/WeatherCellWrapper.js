@@ -5,7 +5,7 @@ export class WeatherCellWrapper extends Component {
   render() {
     return (
       <Grid.Column width={16}>
-        <div class={this.props.cellClass}>
+        <div className={this.props.cellClass}>
           {this.props.children}
         </div>
       </Grid.Column>
