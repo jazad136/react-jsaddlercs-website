@@ -1,8 +1,8 @@
 import React from 'react'
 import {Grid} from 'semantic-ui-react'
-const WeatherHalfCell = ({cellClass, lblClass, lbl,  valueClass, value}) => {
+const WeatherCell = ({cellWidth, cellClass, lblClass, lbl,  valueClass, value}) => {
   return (
-    <Grid.Column width={8}>
+    <Grid.Column width={cellWidth}>
       <div className={cellClass}>
         <Grid columns={2}>
             <Grid.Column>
@@ -26,4 +26,4 @@ const WeatherHalfCell = ({cellClass, lblClass, lbl,  valueClass, value}) => {
   )
 }
 
-export default WeatherHalfCell
+export default WeatherCell

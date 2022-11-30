@@ -29,7 +29,7 @@ export class NameplateSplash2 extends Component {
           </Grid.Column>
         </Grid.Row> */}
         <Grid.Row>
-          <Grid.Column>
+          {/* <Grid.Column>
             <Segment basic className='splash'>
               <Grid columns={2}>
                 <div className="splash-txt s1">
@@ -47,7 +47,7 @@ export class NameplateSplash2 extends Component {
                 </div>
               </Grid>
             </Segment>
-          </Grid.Column>
+          </Grid.Column> */}
         </Grid.Row>
       </Grid>
     );
