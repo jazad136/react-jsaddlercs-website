@@ -4,3 +4,46 @@ body {
 font-family: "Oswald", sans-serif;
 font-size: 16px;
 }
+
+.wViewer { 
+    width: 50%;
+    font-size: 18px;
+}
+.wViewer h2 { 
+    font-size: .9em;
+}
+.wViewer h3 { 
+    font-size: .7em;
+}
+.wViewer .subtitle h3 {
+    margin: 0; 
+    text-align: center;
+}
+
+.wViewerFull { 
+    font-size: 16px;
+}
+.wViewerFull h2 { 
+    font-size: 1.1em;
+}
+.wViewerFull .subtitle { 
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.wViewerFull h3 {
+    font-size: .9em;
+}
+.frcImage {
+    width: 20%;
+    padding-left:30%; 
+ }
+.sunPic {
+    /* height: 50px; */
+    width: 40%;
+}
+
+.subtitle h2{ 
+    margin: 0;
+    text-align: center;
+}

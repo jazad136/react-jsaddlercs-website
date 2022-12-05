@@ -4,13 +4,13 @@ import {Image} from 'semantic-ui-react'
 import WeatherCellWrapper from './WeatherCellWrapper'
 import WeatherFullCell from './WeatherFullCell'
 
-import sunPic from '../../images/weather-img/sun-solid.svg'
-import boltPic from '../../images/weather-img/bolt-solid.svg'
-import fogPic from '../../images/weather-img/smog-solid.svg'
-import './weather.css'
+import sunPic from '../../images-weather/sun-solid.svg'
+import boltPic from '../../images-weather/bolt-solid.svg'
+import fogPic from '../../images-weather/smog-solid.svg'
+import '../../css-weather/App.css'
 
 
-const WeatherIncVert = ({frcSky, temp, feelsLike, wind, dateTime, loading}) => {
+const WeatherIncVert = ({frcLocation, frcSky, temp, feelsLike, wind, dateTime, loading}) => {
   
   const getAPITemp = (loading, inTemp) => 
   {
@@ -35,7 +35,18 @@ const WeatherIncVert = ({frcSky, temp, feelsLike, wind, dateTime, loading}) => {
       return inStr
     }
   }
-  const getAPINumber = (loading, inNum) => { 
+  const getAPIStringSpecial = (loadingStr, loading, inStr) => {
+    if(loading) { 
+      return loadingStr
+    } 
+    else if(inStr == null) {
+      return '...'
+    }
+    else {
+      return inStr
+    }
+  }
+  const getAPINumber = (loading, inNum, inLbl) => { 
     if(loading) { 
       return 'Loading...'
     }
@@ -43,7 +54,7 @@ const WeatherIncVert = ({frcSky, temp, feelsLike, wind, dateTime, loading}) => {
       return -1
     }
     else {
-      return inNum
+      return `${inNum} ${inLbl}`
     }
   }
   const getForecastImg = (frcSky) => { 
@@ -68,24 +79,18 @@ const WeatherIncVert = ({frcSky, temp, feelsLike, wind, dateTime, loading}) => {
     var dtObj = new Date(dtIn)
     // var hour = dtObj.toLocaleTimeString('en-us', {hour: 'numeric', minute: '2-digit', hour12: true})
     var time = dtObj.toLocaleTimeString('en-us', {hour: 'numeric', minute: '2-digit', hour12: true})
-    var hour = dtObj.getHours()
-    var dayPart =  hour > 1 && hour < 13 ? "AM" : "PM"
-    // hour = dayPart === 'PM' ? hour - 12 : hour
-    // var min = dtObj.toLocaleTimeString('en-us',{minute: '2-digit'})
     return (
       <span>
-        {/* {hour + ":" + min + " " + dayPart + " EST"} */}
         {time + ' EST'} 
       </span>
     )
   }
   const formatDate = (dtIn) => {
-    // var options = {  weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
     var dtObj = new Date(dtIn)
     var weekD = dtObj.toLocaleDateString('en-us', {weekday: 'long'})
     var month = dtObj.toLocaleDateString('en-us', {month: 'long'})
-    var day = dtObj.getDay()
-    var year = dtObj.getFullYear()
+    var day = dtObj.toLocaleDateString('en-us', {day: 'numeric'})
+    var year = dtObj.toLocaleDateString('en-us', {year: 'numeric'})
     return (
       <span>
         {weekD + ', ' + month + ' ' + day + ', ' + year}
@@ -100,7 +105,7 @@ const WeatherIncVert = ({frcSky, temp, feelsLike, wind, dateTime, loading}) => {
             Weather
           </h2>
           <h3>
-            Forecast for Flint, MI
+            Forecast for {getAPIStringSpecial('...', loading, frcLocation)}:  
           </h3>
         </WeatherCellWrapper>
         <WeatherCellWrapper cellClass="wa2">
@@ -108,7 +113,8 @@ const WeatherIncVert = ({frcSky, temp, feelsLike, wind, dateTime, loading}) => {
         </WeatherCellWrapper>
 
         <WeatherFullCell cellClass="wa3"   
-          lblClass="skyLbl" lbl="Forecast" valueClass="frcSky" value={getAPIString(loading, frcSky)} />
+          lblClass="skyLbl" lbl="Forecast" 
+          valueClass="frcSky" value={getAPIString(loading, frcSky)} />
 
         <WeatherFullCell cellClass="wa4"  
           lblClass="tempLbl" lbl="Temperature:" 
@@ -122,7 +128,9 @@ const WeatherIncVert = ({frcSky, temp, feelsLike, wind, dateTime, loading}) => {
 
         <WeatherFullCell cellClass="wa6"  
           lblClass="windLbl" lbl="Wind Speed:" 
-          valueClass="wind" value={`${wind} mi./hr.`}
+          valueClass="wind" 
+          // value={`${wind} mi./hr.`}
+          value={getAPINumber(loading, wind, 'mi./hr.')}
         />
         <WeatherCellWrapper cellClass="wa5">
           <div className="timeLbl">

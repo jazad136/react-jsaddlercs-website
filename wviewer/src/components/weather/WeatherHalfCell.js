@@ -6,7 +6,7 @@ const WeatherHalfCell = ({cellClass, lblClass, lbl,  valueClass, value}) => {
       <div className={cellClass}>
         <Grid columns={2}>
             <Grid.Column>
-              <div className={lblClass}>
+              <div className={`headLbl ${lblClass}`}>
                 <h3>
                   {lbl}
                 </h3>

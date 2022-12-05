@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 // import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import WebFont from 'webfontloader';
+import OpenWeather from './OpenWeather';
 import '../css-weather/App.css';
 
 class App extends Component {
@@ -19,8 +20,7 @@ class App extends Component {
   render() { 
     return (
       <div>
-        <div>Root</div>            
-        <div>Path2</div>
+        <OpenWeather />
       </div>
     )
   }

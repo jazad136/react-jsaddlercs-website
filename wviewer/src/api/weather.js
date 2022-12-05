@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export default axios.create({
-    baseURL: 'http://weather.saddlercoms.net:8080/'
+    baseURL: 'http://localhost:8080/weather/api/city'
     // ,
     // params: {
     //     part: 'snippet',
