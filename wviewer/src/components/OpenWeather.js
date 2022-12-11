@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import weather from '../api/weather.js'
 // eslint-disable-next-line
 import WeatherInclude from './weather/WeatherInclude'
+import WeatherInclude2 from './weather/double-weather/WeatherInclude2.js'
 // eslint-disable-next-line
 import {Container} from 'semantic-ui-react'
 import WeatherIncVert from './weather/WeatherIncVert.js'
@@ -33,7 +34,8 @@ const OpenWeather = () => {
   return (
     <Container>
         {/* <WeatherIncVert frcLocation={frcLocation} frcSky={frcSky} temp={temp} feelsLike={feelsLike} wind={wind} dateTime={dateTime} loading={loading}/> */}
-        <WeatherInclude frcLocation={frcLocation} frcSky={frcSky} temp={temp} feelsLike={feelsLike} wind={wind} dateTime={dateTime} loading={loading}/>
+        {/* <WeatherInclude frcLocation={frcLocation} frcSky={frcSky} temp={temp} feelsLike={feelsLike} wind={wind} dateTime={dateTime} loading={loading}/> */}
+        <WeatherInclude2 frcLocation={frcLocation} frcSky={frcSky} temp={temp} feelsLike={feelsLike} wind={wind} dateTime={dateTime} loading={loading}/>
     </Container>
   )
 }
