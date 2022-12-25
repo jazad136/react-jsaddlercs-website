@@ -1,16 +1,16 @@
 import React from 'react'
-import {Container, Grid} from 'semantic-ui-react'
+import {Grid} from 'semantic-ui-react'
 import {Image} from 'semantic-ui-react'
 import WeatherCellWrapper from './WeatherCellWrapper'
 import WeatherFullCell from './WeatherFullCell'
 
-import sunPic from '../../images-weather/sun-solid.svg'
-import boltPic from '../../images-weather/bolt-solid.svg'
-import fogPic from '../../images-weather/smog-solid.svg'
-import '../../css-weather/App.css'
+import sunPic from '../../../images-weather/sun-solid.svg'
+import boltPic from '../../../images-weather/bolt-solid.svg'
+import fogPic from '../../../images-weather/smog-solid.svg'
+import '../../../css-weather/App.css'
 
 
-const WeatherIncVert = ({frcLocation, frcSky, temp, feelsLike, wind, dateTime, loading}) => {
+const WeatherStatus = ({frcLocation, frcSky, temp, feelsLike, wind, dateTime, loading}) => {
   
   const getAPITemp = (loading, inTemp) => 
   {
@@ -57,9 +57,15 @@ const WeatherIncVert = ({frcLocation, frcSky, temp, feelsLike, wind, dateTime, l
       return `${inNum} ${inLbl}`
     }
   }
-  const getForecastImg = (frcSky) => { 
+  const getForecastImg = (loading, frcSky) => { 
     var img = null
-    if(frcSky.toUpperCase() === 'RAIN') {
+    if(loading) {
+      img = sunPic;
+    }
+    else if(frcSky == null) {
+      img = sunPic;
+    }
+    else if(frcSky.toUpperCase() === 'RAIN') {
       img = boltPic
     }
     else if(frcSky.toUpperCase() === 'CLOUDS' || 
@@ -75,8 +81,12 @@ const WeatherIncVert = ({frcLocation, frcSky, temp, feelsLike, wind, dateTime, l
       </div>
     );
   }
-  const formatTime = (dtIn) => {
+  const formatTime = (loading, dtIn) => {
     var dtObj = new Date(dtIn)
+    if(loading) {
+      return ''
+    }
+    
     // var hour = dtObj.toLocaleTimeString('en-us', {hour: 'numeric', minute: '2-digit', hour12: true})
     var time = dtObj.toLocaleTimeString('en-us', {hour: 'numeric', minute: '2-digit', hour12: true})
     return (
@@ -85,7 +95,10 @@ const WeatherIncVert = ({frcLocation, frcSky, temp, feelsLike, wind, dateTime, l
       </span>
     )
   }
-  const formatDate = (dtIn) => {
+  const formatDate = (loading, dtIn) => {
+    if(loading) {
+      return "..."
+    }
     var dtObj = new Date(dtIn)
     var weekD = dtObj.toLocaleDateString('en-us', {weekday: 'long'})
     var month = dtObj.toLocaleDateString('en-us', {month: 'long'})
@@ -108,7 +121,7 @@ const WeatherIncVert = ({frcLocation, frcSky, temp, feelsLike, wind, dateTime, l
           </h3>
         </WeatherCellWrapper>
         <WeatherCellWrapper cellClass="wa2">
-          {getForecastImg(frcSky)}
+          {getForecastImg(loading, frcSky)}
         </WeatherCellWrapper>
 
         <WeatherFullCell cellClass="wa3"   
@@ -137,9 +150,9 @@ const WeatherIncVert = ({frcLocation, frcSky, temp, feelsLike, wind, dateTime, l
           </div>
           <div className="frcTime">
             <h3>
-              <span>{formatDate(dateTime)}</span>
+              <span>{formatDate(loading, dateTime)}</span>
               &nbsp;<br/>
-              {formatTime(dateTime)}
+              <span>{formatTime(loading, dateTime)}</span>
             </h3>
           </div>
         </WeatherCellWrapper>
@@ -147,4 +160,4 @@ const WeatherIncVert = ({frcLocation, frcSky, temp, feelsLike, wind, dateTime, l
   )
 }
 
-export default WeatherIncVert
+export default WeatherStatus
